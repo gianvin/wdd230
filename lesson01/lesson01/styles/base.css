@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+
+body {
+    background-color: antiquewhite;
+    padding: 3 em;
+    font-size: 14px;
+    text-align: center;
+}
+
+header {
+    background-color: aqua;
+    font-style: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    color: black;
+}
+
+nav a:hover {
+    background-color: azure;
+    color: color-mix(in hwb increasing hue, color percentage, color percentage)
+}
+
+.photo {
+    width: 80px;
+}
+
+#photo link {
+    padding-top: 5px;
+    text-align: center;
+}
+
+nav a {
+    text-align: center;
+    color: #f24e34;
+    text-decoration: none;
+    padding: 35px;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
