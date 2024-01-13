@@ -22,7 +22,7 @@ h1 {
 
 h2 {
     grid-row: auto;
-    background: hsl(129, 73%, 25%)
+    background-color: hsl(313, 67%, 81%);
 }
 
 nav a:hover {
@@ -67,6 +67,7 @@ footer p a:hover {
 h3 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
+    background-color: hsl(313, 67%, 81%);
 }
 
 
