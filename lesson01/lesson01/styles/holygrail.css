@@ -16,7 +16,7 @@ header {
 }
 
 main {
-    background: lightblue;
+    background: coral;
     grid-column: 2/3;
 }
 
