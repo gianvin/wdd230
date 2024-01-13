@@ -2,7 +2,7 @@
 
 body {
     background-color: antiquewhite;
-    padding: 3 em;
+    padding: 3em;
     font-size: 14px;
     text-align: center;
 }
@@ -26,7 +26,6 @@ h2 {
 
 nav a:hover {
     background-color: rgb(35, 151, 151);
-    color: color-mix(in hwb increasing hue, color percentage, color percentage)
 }
 
 .photo {
