@@ -80,6 +80,11 @@ h3 {
     background-color: hsl(312, 3%, 34%);
 }
 
+li {
+    justify-content: left;
+}
+
+
 #lastModified {
     color: hsl(313, 74%, 41%)
 }
