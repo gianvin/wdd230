@@ -1,5 +1,61 @@
 /* Default styles for all view*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #0c0c0c;
+}
+
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 2rem auto;
+    border: 1px solid aqua;
+    padding: 1rem;
+    text-align: center;
+    background-color: aqua;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding-left: 1rem;
+    background-color: #fff;
+}
 
 h2 {
     width: 100%;
+    text-align: center;
+}
+
+.card {
+    width: 575px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+
+}
+
+.card-p {
+
+    background-color: #5e5d60;
+    padding: 35px;
+    box-shadow: 1px 1px 3px #5e5d60;
 }
