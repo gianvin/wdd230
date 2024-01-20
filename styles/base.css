@@ -46,7 +46,9 @@ h1 {
 }
 
 h2 {
-    background-color: hsl(313, 67%, 81%);
+    background-blend-mode: normal;
+    text-decoration-line: underline;
+    justify-content: left;
     display: grid;
     grid-row: auto;
     grid-column: 1/4;
