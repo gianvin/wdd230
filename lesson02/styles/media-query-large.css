@@ -4,7 +4,7 @@
     }
 
     header {
-        background: black;
+        background: aqua;
         color: white;
         grid-template-columns: 1fr 1fr;
     }

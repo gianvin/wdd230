@@ -1,19 +1,16 @@
-@media screen and (min-width: 640px) {
-    body {
-        font-size: 16px;
-    }
+@media screen and (min-width: 1024px) {
 
-    header {
-        background: black;
-        color: white;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    nav ul {
+    nav {
         display: flex;
+        padding: 10px;
     }
 
-    nav ul li {
-        flex: 1 1 100%
+    nav a {
+        display: inline-block;
+        flex: 1 1 100%;
+        margin-right: 10px;
     }
+
+
+
 }
