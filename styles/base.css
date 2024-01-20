@@ -48,7 +48,7 @@ h1 {
 h2 {
     background-blend-mode: normal;
     text-decoration-line: underline;
-    justify-content: left;
+    justify-content: center;
     display: grid;
     grid-row: auto;
     grid-column: 1/4;
