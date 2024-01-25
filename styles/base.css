@@ -29,6 +29,21 @@ header {
     grid-column: 1/4;
 }
 
+.menu-button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr;
