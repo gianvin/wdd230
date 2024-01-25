@@ -1,12 +1,13 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width:1024px) {
     body {
         font-size: 16px;
     }
 
     header {
         background: aqua;
-        color: white;
+        color: black;
         grid-template-columns: 1fr 1fr;
     }
+
 
 }
