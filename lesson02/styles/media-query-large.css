@@ -1,6 +1,7 @@
 @media screen and (min-width:1024px) {
     body {
         font-size: 16px;
+
     }
 
     header {
@@ -9,5 +10,9 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .parent>p {
+        display: flex;
+        padding: 10px;
+    }
 
 }
