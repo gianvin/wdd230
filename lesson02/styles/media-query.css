@@ -20,7 +20,7 @@ footer {
 
 main {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1 fr;
     grid-gap: 1rem;
 }
 
