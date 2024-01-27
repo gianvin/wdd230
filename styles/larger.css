@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
 
     nav {
         display: flex;
@@ -11,6 +11,21 @@
         margin-right: 10px;
     }
 
+    #menu,
+    #closeButton {
+        display: none;
+    }
 
 
+
+}
+
+@media screen and (max-width: 767px) {
+    .nav {
+        display: none;
+    }
+
+    .nav.open {
+        display: block;
+    }
 }

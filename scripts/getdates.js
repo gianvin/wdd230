@@ -11,10 +11,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // script for hamburger menu//
 const hamButton = document.querySelector('#menu');
-const nav =
-    document.querySelector('.nav');
+const nav = document.querySelector('.nav');
+const closeButton = document.querySelector('#closeButton');
 
 hamButton.addEventListener('click', () => {
     nav.classList.toggle('open');
     hamButton.classList.toggle('open');
+});
+
+closeButton.addEventListener('click', () => {
+    nav.classList.remove('open');
+    hamButton.classList.remove('open');
 });
