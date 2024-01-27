@@ -8,7 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("lastModified").textContent = "Last Modification: " + formattedDate;
 })
 
-function toggleMenu() {
-    const navMenu = document.querySelector('.nav-menu');
-    navMenu.Menuclasslist.toggle('show');
-}
+
+// script for hamburger menu//
+const hamButton = document.querySelector('#menu');
+const nav =
+    document.querySelector('.nav');
+
+hamButton.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});
