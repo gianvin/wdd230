@@ -1,0 +1,14 @@
+@media screen and (min-width: 768px) {
+
+
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    section {
+        width: 48%;
+    }
+
+
+}

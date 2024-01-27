@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto%display=swap");
 
-* {
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -20,7 +18,7 @@ footer {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1 fr;
+    grid-template-columns: 1fr;
     grid-gap: 1rem;
 }
 
