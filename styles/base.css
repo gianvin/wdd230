@@ -125,13 +125,13 @@ h3 {
     color: hsl(313, 90%, 16%)
 }
 
-.card ul p:first-child::before,
-.card ul p:first-child::after {
+.card ul li:first-child::before,
+.card ul li:first-child::after {
     content: "🎍";
     margin: 0 5px;
 }
 
-.card ul p {
+.card ul li {
     display: flex;
     align-items: center;
 }
