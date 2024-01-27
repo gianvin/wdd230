@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var formattedDate = lastModifiedDate.toLocaleDateString('en-US', options);
 
     document.getElementById("lastModified").textContent = "Last Modification: " + formattedDate;
-})
+});
 
 
 // script for hamburger menu//
