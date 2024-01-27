@@ -12,6 +12,17 @@ body {
 
 }
 
+header {
+    background-color: aqua;
+    font-style: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    grid-column: 1/4;
+}
+
 h1 {
     color: black;
     margin: 0;
@@ -54,4 +65,32 @@ h3 {
     background-color: hsl(188, 85%, 62%);
     text-align: center;
     padding: 10px;
+}
+
+.no-bullet {
+    list-style-type: none;
+    padding: 0;
+}
+
+.no-bullet li {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+
+#lastModified {
+    color: hsl(313, 90%, 16%)
+}
+
+#name {
+    background: none;
+}
+
+li {
+    font-size: 35px;
+}
+
+p {
+    font-size: 35px;
+
 }
