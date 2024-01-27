@@ -125,13 +125,20 @@ h3 {
     color: hsl(313, 90%, 16%)
 }
 
-.card ul li:first-child::before,
-.card ul li:first-child::after {
+.card-information ul li:first-child::before,
+.card-information ul li:first-child::after {
     content: "🎍";
     margin: 0 5px;
 }
 
-.card ul li {
+.card-information ul li {
     display: flex;
     align-items: center;
+}
+
+iframe {
+    display: grid;
+    padding: 1.2rem;
+    grid-column: 1/4;
+    justify-items: center;
 }
