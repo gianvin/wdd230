@@ -5,6 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var formattedDate = lastModifiedDate.toLocaleDateString('en-US', options);
 
-    document.getElementById("lastModified").textContent = "Last Modification: " + formattedDate;
+    document.getElementById("lastUpdated").textContent = "Last Updated: " + formattedDate;
 });
 
