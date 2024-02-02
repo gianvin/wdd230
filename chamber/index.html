@@ -19,49 +19,53 @@
 </head>
 
 <body>
-    <header>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/chamber-logo.jpeg" alt="Chamber Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="">Discover</a>
+                <a href="">Directory</a>
+                <a href="">Join</a>
+            </nav>
+        </header>
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/chamber-hero.jpg" alt="A site in Bulacan showing progress. ">
+            </div>
+            <main>
+                <h2>Join the Chamber</h2>
+                <section class="card-events">
+                    <h3>Events</h3>
+                    <ul class="no-bullet">
+                        <li>Job Fair </li>
+                    </ul>
+                </section>
+                <section class="card-weather">
+                    <h3>Weather</h3>
+                    <ul class="no-bullet">
+                        <li>Marilao Bulacan, Philippines </li>
+                        <li id="temperature">Weather: Loading...</li>
+                        <li id="visits">Page Visits: Loading...</li>
+                    </ul>
+                </section>
+                <section class="card-advertisements">
+                    <h3>Member Spotlights</h3>
+                    <ul class="no-bullet">
+                        <li>Cherubim Events Place </li>
+                        <li>Haiyang Chinese Restaurant</li>
+                        <li>Rockport Travel and Tours</li>
+                    </ul>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; 2024 Bulacan Chamber of Commerce | Gina S. Ong | WDD 230 Project<span id="lastUpdated"> |
+                    </span> </p>
+            </footer>
 
-        <img class="logo" src="images/chamber-logo.png" alt="Chamber Logo">
-        <h1>Bulacan Chamber of Commerce</h1>
-    </header>
-    <button id="menu">&#9776;</button>
-    <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="">Discover</a>
-        <a href="">Directory</a>
-        <a href="">Join</a>
-        <button id="closeButton">&times;</button>
-    </nav>
-    <main>
-        <h2>Join the Chamber</h2>
-        <section class="card-events">
-            <h3>Events</h3>
-            <ul class="no-bullet">
-                <li>Job Fair </li>
-            </ul>
-        </section>
-        <section class="card-weather">
-            <h3>Weather</h3>
-            <ul class="no-bullet">
-                <li>Marilao Bulacan, Philippines </li>
-                <li id="temperature">Weather: Loading...</li>
-                <li id="visits">Page Visits: Loading...</li>
-            </ul>
-        </section>
-        <section class="card-advertisements">
-            <h3>Member Spotlights</h3>
-            <ul class="no-bullet">
-                <li>Cherubim Events Place </li>
-                <li>Haiyang Chinese Restaurant</li>
-                <li>Rockport Travel and Tours</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Bulacan Chamber of Commerce | Gina S. Ong | WDD 230 Project<span id="lastUpdated"> | </span> </p>
-    </footer>
-
-    <script src="scripts/getdates.js"></script>
+            <script src="scripts/getdates.js"></script>
 </body>
 
 </html>
