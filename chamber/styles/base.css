@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=RocknRoll+One&display=swap');
 
-:root {
-    --bord: 1px solid #777;
-}
 
 * {
     box-sizing: border-box;
@@ -26,7 +23,7 @@ header {
     font-family: Roboto;
     display: flex;
     justify-content: space-between;
-    align-items: justify;
+    align-items: center;
     padding: 1rem;
 }
 
@@ -65,6 +62,7 @@ h2 {
     padding: 10px;
     margin: 10px;
     color: white;
+    transform: translateX(-50%);
 }
 
 
@@ -93,13 +91,14 @@ nav a {
 #hero {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-column: 1/4;
     gap: 20px;
     width: 100%;
+    align-self: stretch;
 }
 
 #hero-box {
-    grid-column: 1/span 4;
+    grid-column: 1;
 
 }
 
@@ -115,6 +114,7 @@ footer {
     background-color: rgb(63, 102, 52);
     font-style: normal;
     font-family: Roboto;
+    align-self: end;
 }
 
 
@@ -130,39 +130,50 @@ footer {
 
 .card-events,
 .card-weather {
+    grid-column: 1/4;
+}
+
+.card-events {
     background-color: gray;
-    padding: 20px;
-    grid-column: span 2;
+    padding: 40px;
+    grid-column: 1/2;
+}
+
+.card-weather {
+    background-color: gray;
+    padding: 40px;
+    grid-column: 3/4;
 
 }
+
+.card-advertisements {
+    text-align: center;
+    grid-column: 1/4;
+}
+
 
 .card-advertisements ul li:first-child {
     background-color: gray;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
-    grid-column: 1;
+    grid-column: 1/2;
 }
 
-.card-advertisements ul li:second-child {
+.card-advertisements ul li:nth-child(2) {
     background-color: gray;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
-    grid-column: 2;
+    grid-column: 2/3;
 }
 
-.card-advertisements ul li:third-child {
+.card-advertisements ul li:nth-child(3) {
     background-color: gray;
-    padding: 20px;
+    padding: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    grid-column: 2;
+    grid-column: 3/4;
 }
 
-.card-advertisements h3 {
-    margin-top: 20px;
-    text-align: center;
-
-}
 
 .card-advertisements ul {
     display: grid;
@@ -171,9 +182,8 @@ footer {
 }
 
 
-.card-weather ul li:first-child::before,
-.card-weather ul li:first-child::after {
-    content: "🎍";
+.card-weather ul li:first-child::before {
+    content: "🫡";
     margin: 0 5px;
 }
 
@@ -200,10 +210,4 @@ iframe {
     color: #000;
     font-size: 10px;
     text-decoration: none;
-}
-
-.card-advertisements {
-    padding: 10px;
-    border-top: var(--bord);
-    border-left: var(--bord);
 }
