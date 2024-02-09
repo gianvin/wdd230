@@ -9,16 +9,38 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // script for hamburger menu//
-const hamButton = document.querySelector('#menu');
-const nav = document.querySelector('.nav');
-const closeButton = document.querySelector('#closeButton');
+document.addEventListener("DOMContentLoader", function () {
+    const hamButton = document.querySelector("#menu");
+    const nav = document.querySelector('.nav');
+    const closeButton = document.querySelector('#closeButton');
 
-hamButton.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    hamButton.classList.toggle('open');
+    hamButton.addEventListener('click', () => {
+        nav.classList.toggle('open');
+    });
+
+    closeButton.addEventListener('click', () => {
+        nav.classList.remove('open');
+    });
+
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('open');
+        });
+    });
+
 });
+// script for the mode//
+const modeButton = document.querySelector("#mode");
+const main = document.querySelector("#main");
 
-closeButton.addEventListener('click', () => {
-    nav.classList.remove('open');
-    hamButton.classList.remove('open');
+modeButton.addEventListener("click", () => {
+    if (main && modeButton.textContent.includes("🕶️")) {
+        main.style.background = "#000";
+        main.style.color = "#fff";
+        modeButton.textContent = "🔆";
+    } else if (main) {
+        main.style.background = "#eee";
+        main.style.color = "#000";
+        modeButton.textContent = "🕶️";
+    }
 });
