@@ -95,7 +95,7 @@ nav a {
 picture {
     position: relative;
     grid-column: 1/4;
-    width: 100;
+    width: 100%;
     height: auto;
 }
 
