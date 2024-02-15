@@ -83,6 +83,41 @@ nav a {
     display: flex;
 }
 
+#hero {
+    position: relative;
+    display: grid;
+    grid-column: 1/4;
+    gap: 20px;
+    width: 100%;
+    align-self: stretch;
+}
+
+picture {
+    position: relative;
+    grid-column: 1/4;
+    width: 100;
+    height: auto;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+picture p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #faebd7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding: 10px;
+    margin: 0;
+    color: black;
+    z-index: 1;
+    display: block;
+}
+
+
 
 footer {
     display: grid;
