@@ -1,4 +1,17 @@
-.hero img {
+#hero {
+    position: relative;
+    display: grid;
+    grid-column: 1/4;
+    gap: 20px;
     width: 100%;
-    height: auto;
+    align-self: stretch;
+}
+
+#hero-box {
+    grid-column: 1;
+
+}
+
+#hero-img {
+    width: 100%;
 }
