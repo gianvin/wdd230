@@ -10,11 +10,18 @@ main {
     flex-direction: column;
 }
 
+footer {
+    color: black;
+    text-align: center;
+    ;
+}
+
 img {
     width: 100%;
     background: white;
     animation: fade 15s;
 }
+
 
 @keyframes fade {
     0% {
