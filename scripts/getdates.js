@@ -23,3 +23,22 @@ closeButton.addEventListener('click', () => {
     nav.classList.remove('open');
     hamButton.classList.remove('open');
 });
+
+//script for local storage page visits//
+
+const pageVisitsDisplay = document.querySelector('#visits');
+
+let pageVisits = Number(window.localStorage.getItem("pageVisits-localStorage")) || 0;
+
+if (pageVisits !== 0) {
+    pageVisitsDisplay.textContent = `Page Visits: ${pageVisits}`;
+} else {
+
+    pageVisitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+}
+
+pageVisits++;
+localStorage.setItem("pageVisits-localStorage", pageVisits);
+
+
+
