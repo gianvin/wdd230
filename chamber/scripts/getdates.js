@@ -42,3 +42,40 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
+//script for lazy loading//
+
+let lazyImages = document.querySelectorAll("img[src]");
+
+lazyImages.forEach(function (lazyImage) {
+    lazyImage.addEventListener("load", function () {
+        lazyImage.classList.add("loaded");
+    });
+    lazyImage.src = lazyImage.getAttribute("src");
+});
+
+//scipt for local storage//
+
+const sidebar = document.querySelector('aside');
+const visitTimestamp = localStorage.getItem('visitTimestamp');
+const oneDayInMillis = 24 * 60 * 60 * 1000;
+const currentTimestamp = new Date().getTime();
+
+if (!visitTimestamp) {
+    // if first visit//
+    sidebar.innerHTML = `<h2> Welcome! Let us know if you have any questions?</h2>`;
+    localStorage.setItem('visitTimestamp', currentTimestamp);
+} else {
+    const daysSinceLastVisit = Math.floor((currentTimeStamp - visitTimestamp) / oneDayInMillis);
+
+    if (daysSinceLastVisit === 0) {
+        sidebar.innerHTML = `<h2> Back so soon! Awesome!</h2>`;
+
+    } else if (daysSinceLastVisit === 1) {
+        sidebar.innerHTML = `<h2>You last visited 1 day ago.</h2>`;
+    } else {
+        sidebar.innerHTML = `<h2>You last visited ${daysSinceLastVisit} days ago. </h2>`;
+    }
+
+};
+
