@@ -63,18 +63,18 @@ const currentTimestamp = new Date().getTime();
 
 if (!visitTimestamp) {
     // if first visit//
-    sidebar.innerHTML = `<h2> Welcome! Let us know if you have any questions?</h2>`;
+    sidebar.innerHTML = `<h3> Welcome! Let us know if you have any questions?</h3>`;
     localStorage.setItem('visitTimestamp', currentTimestamp);
 } else {
     const daysSinceLastVisit = Math.floor((currentTimeStamp - visitTimestamp) / oneDayInMillis);
 
     if (daysSinceLastVisit === 0) {
-        sidebar.innerHTML = `<h2> Back so soon! Awesome!</h2>`;
+        sidebar.innerHTML = `<h3> Back so soon! Awesome!</h3>`;
 
     } else if (daysSinceLastVisit === 1) {
-        sidebar.innerHTML = `<h2>You last visited 1 day ago.</h2>`;
+        sidebar.innerHTML = `<h3>You last visited 1 day ago.</h3>`;
     } else {
-        sidebar.innerHTML = `<h2>You last visited ${daysSinceLastVisit} days ago. </h2>`;
+        sidebar.innerHTML = `<h3>You last visited ${daysSinceLastVisit} days ago. </h3>`;
     }
 
 };
