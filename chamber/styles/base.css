@@ -319,7 +319,28 @@ main {
     gap: 10px;
 }
 
-figure {}
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+img.loaded {
+    opacity: 1;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+}
 
 h2 {
     color: white;
