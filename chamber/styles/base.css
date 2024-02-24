@@ -297,65 +297,86 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
-/* styles for discover.html */
+/* this is the second pagestyles for discover.html */
 
-body {
-    margin: 0;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 10px;
-}
 
 aside {
     background-color: #333;
     color: white;
     padding: 20px;
+    text-align: center;
 }
 
-.no-bullet {
-    list-style-type: none;
+
+.not-bulleted {
+    list-style: none;
     padding: 0;
+    margin: 0;
+    display: grid;
+    grid-column: 1/2;
 }
 
-.no-bullet li {
-    text-align: left;
+.not-bulleted li {
     margin-bottom: 10px;
+    text-align: left;
+    display: grid;
+    grid-column: 1/2;
 }
 
 main {
-    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-gap: 20px;
 }
 
 figure {
     margin: 0;
     text-align: center;
+    grid-column: 3/4;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-img.loaded {
-    opacity: 1;
-}
 
 figcaption {
     margin-top: 10px;
     font-style: italic;
 }
 
-h2 {
+h5 {
+    background-color: green;
+    padding: 10px;
+    margin: 10px;
     color: white;
+    font-size: large;
+
 }
 
-h3 {
+h6 {
     color: white;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: large;
+}
+
+img {
+    max-width: 100%;
+    background: white;
+    animation: fade 15s;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+#lastUpdated {
+    background-color: antiquewhite;
+    color: #333;
+    font-style: normal;
 }

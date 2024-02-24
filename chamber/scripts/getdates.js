@@ -43,17 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-//script for lazy loading//
-
-let lazyImages = document.querySelectorAll("img[src]");
-
-lazyImages.forEach(function (lazyImage) {
-    lazyImage.addEventListener("load", function () {
-        lazyImage.classList.add("loaded");
-    });
-    lazyImage.src = lazyImage.getAttribute("src");
-});
-
 //scipt for local storage//
 
 const sidebar = document.querySelector('aside');
@@ -66,15 +55,15 @@ if (!visitTimestamp) {
     sidebar.innerHTML = `<h3> Welcome! Let us know if you have any questions?</h3>`;
     localStorage.setItem('visitTimestamp', currentTimestamp);
 } else {
-    const daysSinceLastVisit = Math.floor((currentTimeStamp - visitTimestamp) / oneDayInMillis);
+    const daysSinceLastVisit = Math.floor((currentTimestamp - visitTimestamp) / oneDayInMillis);
 
     if (daysSinceLastVisit === 0) {
-        sidebar.innerHTML = `<h3> Back so soon! Awesome!</h3>`;
+        sidebar.innerHTML = `<h6> Back so soon! Awesome!</h6>`;
 
     } else if (daysSinceLastVisit === 1) {
-        sidebar.innerHTML = `<h3>You last visited 1 day ago.</h3>`;
+        sidebar.innerHTML = `<h6>You last visited 1 day ago.</h6>`;
     } else {
-        sidebar.innerHTML = `<h3>You last visited ${daysSinceLastVisit} days ago. </h3>`;
+        sidebar.innerHTML = `<h6>You last visited ${daysSinceLastVisit} days ago. </h6>`;
     }
 
 };
