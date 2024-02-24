@@ -302,7 +302,7 @@ input:checked+.slider:before {
 body {
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr;
     gap: 10px;
 }
 
@@ -310,6 +310,16 @@ aside {
     background-color: #333;
     color: white;
     padding: 20px;
+}
+
+.no-bullet {
+    list-style-type: none;
+    padding: 0;
+}
+
+.no-bullet li {
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 main {
@@ -343,5 +353,9 @@ figcaption {
 }
 
 h2 {
+    color: white;
+}
+
+h3 {
     color: white;
 }
