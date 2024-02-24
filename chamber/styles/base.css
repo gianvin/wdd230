@@ -299,12 +299,24 @@ input:checked+.slider:before {
 
 /* this is the second pagestyles for discover.html */
 
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+#main-content {
+    display: flex;
+    width: 100%;
+}
 
 aside {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
+    flex: 1;
 }
 
 
@@ -326,14 +338,13 @@ aside {
 main {
     display: grid;
     grid-gap: 20px;
+    flex: 1;
 }
 
 figure {
     margin: 0;
     text-align: center;
-    grid-column: 3/4;
 }
-
 
 figcaption {
     margin-top: 10px;
