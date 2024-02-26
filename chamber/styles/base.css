@@ -300,7 +300,37 @@ input:checked+.slider:before {
 /* this is the second pagestyles for discover.html */
 
 
+aside {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
+
+.not-bulleted {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    align-items: center;
+}
+
+.not-bulleted li {
+    margin-bottom: 10px;
+    text-align: left;
+    display: grid;
+    grid-column: 1/2
+}
+
+strong {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-gap: 20px;
+}
 
 figure {
     margin: 0;
@@ -329,28 +359,4 @@ h6 {
     grid-column: 1/2;
     grid-row: 2/3;
     font-size: large;
-}
-
-img {
-    max-width: 100%;
-    background: white;
-    animation: fade 15s;
-}
-
-
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-
-}
-
-#lastUpdated {
-    background-color: antiquewhite;
-    color: #333;
-    font-style: normal;
 }
