@@ -314,22 +314,30 @@ aside {
     margin: 0;
     display: grid;
     align-items: center;
+    width: 80%;
+
 }
 
 .not-bulleted li {
+    color: white;
     margin-bottom: 10px;
     text-align: left;
     display: grid;
-    grid-column: 1/2
+    grid-column: 1/2;
+    grid-row: inherit;
 }
 
 strong {
     text-align: center;
 }
 
+.industry {
+    border: 1px solid #000;
+    padding: 5px;
+}
+
 main {
-    display: grid;
-    grid-gap: 20px;
+    flex: 1;
 }
 
 figure {
@@ -340,7 +348,8 @@ figure {
 
 
 figcaption {
-    margin-top: 10px;
+    margin-top: 5px;
+    font-size: xx-large;
     font-style: italic;
 }
 
@@ -349,8 +358,7 @@ h5 {
     padding: 10px;
     margin: 10px;
     color: white;
-    font-size: large;
-
+    font-size: xx-large
 }
 
 h6 {
@@ -358,5 +366,37 @@ h6 {
     display: grid;
     grid-column: 1/2;
     grid-row: 2/3;
-    font-size: large;
+    font-size: x-large;
+}
+
+h7 {
+    color: white;
+    font-size: xx-large;
+    display: grid;
+    grid-column: 1/2;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    background: white;
+    animation: fade 15s;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+#lastUpdated {
+    background-color: antiquewhite;
+    color: #333;
+    font-style: normal;
 }
