@@ -371,13 +371,6 @@ h6 {
     font-size: x-large;
 }
 
-h7 {
-    color: white;
-    font-size: xx-large;
-    display: grid;
-    grid-column: 1/2;
-    text-align: center;
-}
 
 img {
     max-width: 100%;
