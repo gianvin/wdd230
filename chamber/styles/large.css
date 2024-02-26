@@ -1,0 +1,34 @@
+@media screen and (min-width: 768px) {
+
+    nav {
+        display: flex;
+        padding: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        flex: 1 1 100%;
+        margin-right: 10px;
+    }
+
+    #menu,
+    #closeButton {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .nav {
+        display: none;
+    }
+
+    .nav.open {
+        display: block;
+    }
+
+    iframe {
+        width: 5%;
+    }
+}
