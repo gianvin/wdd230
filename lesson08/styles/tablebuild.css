@@ -7,5 +7,48 @@
     --borderlight: hsla(0, 0%, 33%.3);
     --shadow: hsl(0, 0%, 50%);
     --zebra: hsl(0, 93%, 1);
+}
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+    margin: 10px;
+    border: thin solid var(--border);
+    box-shadow: 0 0 10px var(--shadow);
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--back);
+    font-size: .85rem;
+}
+
+tr:nth-child(4) td,
+.highlight {
+    background-color: var(--shadow);
+    color: var(--border);
+}
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid var(--borderlight);
+}
+
+th {
+    background-color: var(--shadow);
+    font-size: large;
+    color: var(--forelight);
+}
+
+th:first-child {
+    background-color: var(--border);
+}
+
+td {
+    text-align: center;
 }
