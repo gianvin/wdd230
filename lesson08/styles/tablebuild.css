@@ -27,8 +27,7 @@ caption {
     font-size: .85rem;
 }
 
-tr:nth-child(4) td,
-.highlight {
+tbody tr:nth-child(even) {
     background-color: var(--shadow);
     color: var(--border);
 }
