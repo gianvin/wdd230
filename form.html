@@ -42,14 +42,15 @@
             <fieldset>
                 <legend>Email</legend>
                 <label>Email*<input type="email" name="email" placeholder="someone@byui.edu"
-                        pattern="[a-zA-Z0-9._%+-] +@byui.edu" required></label>
+                        pattern="[a-zA-Z0-9._%+-] +@byui.edu" required title="Enter a valid BYUI email address"></label>
             </fieldset>
 
             <fieldset>
                 <legend>Tell your experience with us</legend>
                 <label for="rating">Choose(1-10) to rate us</label>
                 <div id="range-value">1</div>
-                <input type="range" id="rating" name="rating" min="i" max="10" step="1" list="range-values">
+                <input type="range" id="rating" name="rating" min="i" max="10" step="1" list="range-values"
+                    tile="Slide to select your rating">
                 <datalist id="range-values">
                     <option value=1>1</option>
                     <option value=2>2</option>
@@ -65,7 +66,7 @@
 
             </fieldset>
 
-            <input type="submit" value="Record My Feedback">
+            <input type="submit" value="Record My Feedback" title="Click to submit your feedback">
         </form>
 
     </main>
