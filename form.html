@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gina S. Ong">
+    <meta name="description" content="This is an application activity assignment for WDD230 Week 08 Form Build. ">
+    <title>WDD230 Week 08 Assignment HTML Form Build</title>
+</head>
+
+<body>
+    <header>
+        <img class="photo" src="images/myphoto.webp" alt="My Photo">
+        <h1>Gina S. Ong</h1>
+    </header>
+    <button id="menu">&#9776;</button>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+        <a href="chamber/">Chamber</a>
+        <a href="https://www.byui.edu/">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+        <button id="closeButton">&times;</button>
+    </nav>
+    <main>
+        <h1>User Name and Password Creation</h1>
+        <form method="get" action="record.html" class="wf1">
+            <fieldset>
+                <legend>Username and Password</legend>
+                <label>Username*<input type="text" name="uname" id="username" required></label>
+                <label>Password*<input type="password" name="passwoord2" id="password2" pattern="[a-zA-Z0-9]{8,}"
+                        placeholder="" required></label>
+                <label>Confirmation Password*<input type="password" name="password2" id="password2" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Email</legend>
+                <label>Email*<input type="email" name="email" placeholder="someone@byui.edu"
+                        pattern="[a-zA-Z0-9._%+-] +@byui.edu" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tell your experience with us</legend>
+                <label for="rating">Choose(1-10) to rate us</label>
+                <div id="range-value">1</div>
+                <input type="range" id="rating" name="rating" min="i" max="10" step="1" list="range-values" required>
+                <datalist id="range-values">
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>41</option>
+                    <option value=5>5</option>
+                    <option value=5>6</option>
+                    <option value=7>7</option>
+                    <option value=8>8</option>
+                    <option value=9>9</option>
+                    <option value=10>10</option>
+                </datalist>
+
+            </fieldset>
+
+            <input type="submit" value="Record My Feedback">
+        </form>
+
+    </main>
+    <footer>
+        <p>WDD230&copy; 2024 Gina S. Ong - Philippines</p>
+        <p id="lastModified">Last Modification:</p>
+    </footer>
+</body>
+
+</html>
