@@ -125,18 +125,18 @@ main {
     color: #fff;
     border-radius: 6px;
     padding: .8rem;
-    width: 96px;
+    width: 96%;
     max-width: 400px;
     margin: -1rem 2% 2rem 2%;
     box-shadow: 1px 1px 4px #999;
 }
 
 .wf1 input:required {
-    border-bottom: solid 80x red;
+    border-bottom: solid .80px red;
 }
 
 .wf1 input:required:valid {
-    border-bottom: solid 80x green;
+    border-bottom: solid .80px green;
 }
 
 
