@@ -113,40 +113,51 @@ footer p a:hover {
 }
 
 /* styles for form */
+:root {
+    --back: hsla(150, 50%, 30% 1);
+    --back2: hsla(150, 50%, 30% .5);
+    --foredark: hsla(0, 0%, 10%1);
+    --forelight: hsla(0, 0%, 100%, 1);
+    --border: hsla(244, 64%, 29%, 0.8);
+    --borderlight: hsla(0, 0%, 33%.3);
+    --shadow: hsl(0, 0%, 50%);
+    --zebra: hsl(0, 90%, 58%);
+}
+
 .wf1 fieldset {
     margin: 2rem 0;
-    border: 1px solid #ddd;
+    border: 1px solid var(--forelight);
     border-radius: 6px;
     padding: .5rem 2%;
 }
 
 .wf1 legend {
-    color: #445ba9;
+    color: var(--border);
     padding: 0 .5rem;
 }
 
 .wf1 label {
     display: block;
     padding-top: 1rem;
-    color: #9c2c13;
+    color: var(--zebra);
     font-size: .9rem;
 }
 
 .wf1 div {
     padding-top: 1rem;
-    color: #445ba9;
+    color: var(--border);
     font-size: .9rem
 }
 
 .wf1 input[type="text"],
 .wf1 input[type="password"],
 .wf1 input[type="email"] {
-    background-color: #eee;
+    background-color: var(--forelight);
     display: block;
-    border: solid 1px #999;
+    border: solid 1px var(--shadow);
     border-radius: 6px;
     padding: .75rem;
-    color: #555;
+    color: var(--shadow);
     width: 100%;
     max-width: 400px;
     appearance: none;
