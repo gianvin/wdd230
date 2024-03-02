@@ -58,22 +58,22 @@
                             required></label>
                     <label>Email Address*<input type="email" name="email" id="email" placeholder="someone@gmail.com"
                             required></label>
-                    <label>Mobile Phone Number*<input type="mobNumber" name="mobNumber" id="number"
+                    <label for="mobNumber">Mobile Phone Number*<input type="tel" name="mobNumber" id="number"
                             placeholder="1235551234" required></label>
                     <label>Business Name*<input type="text" name="bName" id="bName" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>Membership Information</legend>
                     <div>Level</div>
-                    <label><input type="radio" name="level" value="nonProfit">Non-Profit/label>
-                        <label><input type="radio" name="level" value="bronze">Bronze Membership</label>
-                        <label><input type="radio" name="level" value="silver">Silver Membership</label>
-                        <label><input type="radio" name="level" value="gold">Gold Membership</label>
+                    <label><input type="radio" name="level" value="nonProfit">Non-Profit</label>
+                    <label><input type="radio" name="level" value="bronze">Bronze Membership</label>
+                    <label><input type="radio" name="level" value="silver">Silver Membership</label>
+                    <label><input type="radio" name="level" value="gold">Gold Membership</label>
                 </fieldset>
                 <fieldset>
                     <legend>Business Description</legend>
                     <label for="businessDescription">Describe your business</label>
-                    <textarea id="businessDescription" name="description" id="description" rows="4" required></textarea>
+                    <textarea id="businessDescription" name="description" rows="4"></textarea>
                 </fieldset>
 
                 <input type="hidden" id="hiddenfield" name="hiddenfield" value="This is a hidden value">
