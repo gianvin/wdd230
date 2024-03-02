@@ -60,7 +60,7 @@
                             required></label>
                     <label>Mobile Phone Number*<input type="mobNumber" name="mobNumber" id="number"
                             placeholder="1235551234" required></label>
-                    <label>Business/Organization Name*<input type="text" name="bName" id="bName" required></label>
+                    <label>Business Name*<input type="text" name="bName" id="bName" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>Membership Information</legend>
@@ -71,17 +71,47 @@
                     <label><input type="radio" name="level" value="silver">Silver Membership</label>
                     <label><input type="radio" name="level" value="gold">Gold Membership</label>
                 </fieldset>
+                <fieldset>
+                    <legend>Business Description</legend>
+                    <label for="businessDescription">Describe your business</label>
+                    <textarea id="businessDescription" name="businessDescription" rows="4" required></textarea>
+                </fieldset>
 
-
+                <div class="membership-benefits">
+                    <h2>Membersip Benefits</h2>
+                    <ul>
+                        <li>Non-Profit: Access to networking events. Inclusion in the chamber's online directory.
+                            Participation in community outreach programs. recognition as a non-profit supporter in
+                            chamber
+                            communications.</li>
+                        <li>Bronze Membership: All Non-Profit benefits. Logo placement on the chamber website. One
+                            featured
+                            article in the chamber newsletter. Discount rate for chamber-sponsored events. Access to
+                            educational workshops and seminars.</li>
+                        <li>Silver Membership: All Bronze benefits. Increase visibility with a dedicated section on the
+                            section on the chamber website. Two featured articles in the chamber newsletter. Priority
+                            sponsorship opportunities for events. Access to exclusive induustry reports and market
+                            research.
+                        </li>
+                        <li>Gold Membership: All Silver benefits. Premier logo placement on the chamber website. Three
+                            featured article in the chamber newsletter. Exclusive access to VIP events and roundtable
+                            discussions. Personalized consultation sessions with chamber experts. priority consideration
+                            for
+                            chamber leadership roles.</li>
+                    </ul>
+                </div>
+                <input type="submit" value="Submit Membership Application"
+                    title="Click to submit your membership application">
+            </form>
         </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Bulacan Chamber of Commerce | Gina S. Ong | WDD 230 Project | <span id="lastUpdated"> |
+            </span></p>
+    </footer>
 
-        <footer>
-            <p>&copy; 2024 Bulacan Chamber of Commerce | Gina S. Ong | WDD 230 Project | <span id="lastUpdated"> |
-                </span></p>
-        </footer>
-
-        <script src="scripts/getdates.js"></script>
-        <script src="scripts/windchill.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
