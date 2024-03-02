@@ -390,3 +390,134 @@ img {
     color: #333;
     font-style: normal;
 }
+
+/* styles for the join */
+:root {
+    --back: hsla(150, 50%, 30%, 1);
+    --back2: rgb(127, 132, 129);
+    --foredark: hsla(0, 0%, 10%, 1);
+    --forelight: hsla(0, 0%, 100%, 1);
+    --border: hsla(244, 64%, 29%, 0.8);
+    --borderlight: hsla(0, 0%, 33%, .3);
+    --shadow: hsl(132, 89%, 18%);
+    --zebra: hsl(0, 90%, 58%);
+}
+
+.wf1 h1 {
+    color: var(--forelight);
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+    text-align: left;
+
+}
+
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--forelight);
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.wf1 legend {
+    background-color: antiquewhite;
+    color: var(--foredark);
+    padding: 0 .5rem;
+    text-align: left;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--shadow);
+    font-size: .9rem;
+    text-align: left;
+}
+
+
+.wf1 input[type="text"],
+.wf1 input[type="mobNumber"],
+.wf1 input[type="email"] {
+    background-color: var(--forelight);
+    display: block;
+    border: solid 1px var(--border);
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--border);
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="radio"] {
+    margin-right: 6px;
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.wf1 input:required {
+    border-bottom: solid .80px red
+}
+
+.wf1 input:required:valid {
+    border-bottom: solid .80px green;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--back);
+}
+
+table {
+    margin: 10px;
+    border: thin solid var(--back2);
+    box-shadow: 0 0 10px var(--shadow);
+    border-collapse: collapse;
+    margin: top 5px;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--foredark);
+    font-size: .85rem;
+}
+
+tbody {
+    background-color: antiquewhite;
+    color: var(--border);
+}
+
+tbody tr {
+    color: var(--foredark);
+}
+
+tbody tr ul li {
+    text-align: left;
+    color: var(--foredark);
+
+}
+
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid var(--borderlight);
+}
+
+th {
+    background-color: var(--foredark);
+    font-size: large;
+    color: var(--forelight);
+}

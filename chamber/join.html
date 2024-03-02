@@ -65,46 +65,112 @@
                 <fieldset>
                     <legend>Membership Information</legend>
                     <div>Level</div>
-                    <label><input type="radio" name="level" value="nonProfit">NP (Membership is for non profit
-                        organization and there is no fee.)</label>
-                    <label><input type="radio" name="level" value="bronze">Bronze Membership</label>
-                    <label><input type="radio" name="level" value="silver">Silver Membership</label>
-                    <label><input type="radio" name="level" value="gold">Gold Membership</label>
+                    <label><input type="radio" name="level" value="nonProfit">Non-Profit/label>
+                        <label><input type="radio" name="level" value="bronze">Bronze Membership</label>
+                        <label><input type="radio" name="level" value="silver">Silver Membership</label>
+                        <label><input type="radio" name="level" value="gold">Gold Membership</label>
                 </fieldset>
                 <fieldset>
                     <legend>Business Description</legend>
                     <label for="businessDescription">Describe your business</label>
-                    <textarea id="businessDescription" name="businessDescription" rows="4" required></textarea>
+                    <textarea id="businessDescription" name="description" id="description" rows="4" required></textarea>
                 </fieldset>
 
-                <div class="membership-benefits">
-                    <h2>Membersip Benefits</h2>
-                    <ul>
-                        <li>Non-Profit: Access to networking events. Inclusion in the chamber's online directory.
-                            Participation in community outreach programs. recognition as a non-profit supporter in
-                            chamber
-                            communications.</li>
-                        <li>Bronze Membership: All Non-Profit benefits. Logo placement on the chamber website. One
-                            featured
-                            article in the chamber newsletter. Discount rate for chamber-sponsored events. Access to
-                            educational workshops and seminars.</li>
-                        <li>Silver Membership: All Bronze benefits. Increase visibility with a dedicated section on the
-                            section on the chamber website. Two featured articles in the chamber newsletter. Priority
-                            sponsorship opportunities for events. Access to exclusive induustry reports and market
-                            research.
-                        </li>
-                        <li>Gold Membership: All Silver benefits. Premier logo placement on the chamber website. Three
-                            featured article in the chamber newsletter. Exclusive access to VIP events and roundtable
-                            discussions. Personalized consultation sessions with chamber experts. priority consideration
-                            for
-                            chamber leadership roles.</li>
-                    </ul>
-                </div>
+
                 <input type="submit" value="Submit Membership Application"
                     title="Click to submit your membership application">
             </form>
         </main>
     </div>
+    <table>
+        <caption>Table 1: Membership Fees and Benefits</caption>
+        <thead>
+            <tr>
+                <th colspan="4" scope="colgroup">BCOC Membersip Fees and Benefits</th>
+            </tr>
+            <tr>
+
+                <th scope="col">Level of Membership</th>
+                <th scope="col">Benefits</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Non-Profit</td>
+                <td>
+                    <ul>
+                        <li>Fee of $0</li>
+                        <li>Access to networking events.</li>
+                        <li>Inclusion in the chamber's online directory.</li>
+                        <li>Participation in community outreach programs. recognition as a non-profit supporter in
+                            chamber
+                            communications.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Bronze</td>
+                <td>
+                    <ul>
+                        <li>Fee of $100</li>
+                        <li>All Non-Profit benefits.</li>
+                        <li>Logo placement on the chamber website. </li>
+                        <li>One
+                            featured
+                            article in the chamber newsletter.
+                        </li>
+                        <li>Discount rate for chamber-sponsored events.</li>
+                        <li>Access to educational workshops and seminars.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Silver</td>
+                <td>
+                    <ul>
+                        <li>Fee of $200</li>
+                        <li>All Bronze benefits. .</li>
+                        <li>Increase visibility with a dedicated section on the
+                            section on the chamber website.
+                        </li>
+                        <li>Two featured articles in the chamber newsletter.</li>
+                        <li>Priority
+                            sponsorship opportunities for events.
+                        </li>
+                        <li>Access to exclusive induustry reports and market
+                            research.
+                        </li>
+                    </ul>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Gold</td>
+                <td>
+                    <ul>
+                        <li>Fee of $300</li>
+                        <li>All Silver benefits. .</li>
+                        <li>Premier logo placement on the chamber website.
+                        </li>
+                        <li>Three
+                            featured article in the chamber newsletter.
+                        </li>
+                        <li>Exclusive access to VIP events and roundtable
+                            discussions.
+
+                        </li>
+                        <li>Personalized consultation sessions with chamber experts
+                        </li>
+                        <li>priority consideration
+                            for
+                            chamber leadership roles.
+                        </li>
+                    </ul>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
     <footer>
         <p>&copy; 2024 Bulacan Chamber of Commerce | Gina S. Ong | WDD 230 Project | <span id="lastUpdated"> |
             </span></p>
