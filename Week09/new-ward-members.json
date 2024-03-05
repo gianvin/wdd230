@@ -1,3 +1,50 @@
 {
-    "wardInformation": {}
+    "wardInformation": {
+        "familyName": "Ong",
+        "moveInDate": "2023-12-24",
+        "numberOfPeople": 8,
+        "visitedByBishophric": true,
+        "familyMembers": [
+            {
+                "name": "Alvin Ong",
+                "gender": "Male",
+                "birthdate": "1982-03-10"
+            },
+            {
+                "name": "Gina Ong",
+                "gender": "Female",
+                "birthdate": "1974-09-06"
+            },
+            {
+                "name": "Alvin Ong",
+                "gender": "Male",
+                "birthdate": "1982-03-10"
+            },
+            {
+                "name": "Rica Ong",
+                "gender": "Female",
+                "birthdate": "1980-09-10"
+            },
+            {
+                "name": "Aida Ong",
+                "gender": "Female",
+                "birthdate": "1958-03-10"
+            },
+            {
+                "name": "Jerick Ong",
+                "gender": "Male",
+                "birthdate": "1988-07-22"
+            },
+            {
+                "name": "Jay-R Ong",
+                "gender": "Male",
+                "birthdate": "1998-12-24"
+            },
+            {
+                "name": "Chelsea Ong",
+                "gender": "Female",
+                "birthdate": "1992-06-13"
+            }
+        ]
+    }
 }
