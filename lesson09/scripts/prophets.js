@@ -28,7 +28,7 @@ const displayProphets = (prophets) => {
         portrait.setAttribute('height', '440');
 
         //Append the section (crad) with the created element
-        card.appendChild(Wilford);
+        card.appendChild(wilfordWoodruff);
         card.appendChild(portrait);
 
         cards.appendChild(card);
