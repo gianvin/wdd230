@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
     font-size: 16px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 header,
@@ -21,7 +26,7 @@ h1 {
 
 h2 {
     color: navy;
-    margin: 0 0 1rem 0;
+    margin: 10px;
     border-bottom: 1px solid #bbb;
 }
 
@@ -30,12 +35,12 @@ main {
 }
 
 section {
-    margin: 0.25rem;
+    margin: 0.15rem;
     padding: 0.35rem;
     background-color: #eee;
     border: 1px solid #bbb;
     display: flex;
-    flex: column;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -52,11 +57,23 @@ img {
     border: 1px solid #333;
 }
 
-#card {
+#cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background-color: #cfcaca;
+    padding: 20px;
+    box-shadow: 0 0 40px
+}
+
+header {
+    top: 0;
+    left: 30rem;
 }
 
 footer {
     border-top: 1px solid #555;
+    bottom: 0;
+    left: 30 rem;
+    line-height: 30px;
+    text-align: center;
 }
