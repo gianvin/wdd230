@@ -172,6 +172,7 @@ h3 {
 }
 
 #cards ul {
+    list-style: none;
     text-align: left;
 }
 
@@ -194,7 +195,6 @@ li {
 }
 
 a {
-    text-decoration: none;
     color: #0066cc;
 }
 
