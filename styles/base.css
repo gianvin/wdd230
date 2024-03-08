@@ -171,6 +171,41 @@ h3 {
     align-items: center;
 }
 
+#cards ul {
+    list-style: none;
+    text-align: left;
+}
+
+h4,
+ul,
+li,
+a {
+
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-size: 18px;
+
+}
+
+li {
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
 iframe {
     display: grid;
     padding: 1.2rem;

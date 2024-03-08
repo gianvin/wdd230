@@ -10,24 +10,35 @@ async function getLinks() {
 
 function displayLinks(lessons) {
     let cards = document.getElementById("cards");
+    cards.innerHTML = "";
+
+    let card = document.createElement("ul");
+    let activities = document.createElement("h3");
+    activities.textContent = `Learning Activities`;
+    card.appendChild(activities);
+
+
 
     lessons.forEach((lesson) => {
-        let card = document.createElement("ul");
-        let activities = document.createElement("h3");
-        let week = document.createElement("'li'")
 
-        activities.textContent = `Learning Activities`;
-        week.textContent = `Week ${lesson}:`;
+
+        let weekHeader = document.createElement("h4");
+        weekHeader.textContent = `Week: ${lesson.lesson}:`;
+        card.appendChild(weekHeader);
+
+
+
 
         lesson.links.forEach((link) => {
-            let linkElement = document.createElement("a");
-            linkElement.href = `${baseURL}/${link.url}`;
-            linkElement.target = "_blank";
-            linkElement.textContent = link.title;
-            card.appendChild(linkElement)
+            let linkElement = document.createElement("li");
+            let linkAnchor = document.createElement("a");
+            linkAnchor.href = `${baseURL}/${link.url}`;
+            linkAnchor.target = "_blank";
+            linkAnchor.textContent = `${link.title}`;
 
-            let breakElement = document.createElement("br");
-            card.appendChild(breakElement);
+            linkElement.appendChild(linkAnchor);
+            card.appendChild(linkElement);
+
         });
 
         cards.appendChild(card);
