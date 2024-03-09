@@ -53,20 +53,7 @@
             "links": [
                 {
                     "url": "lesson05/bom.html",
-                    "title": "Book of Mormon - Top 10"
-                },
-                {
-                    "url": "lesson02/design-principles.html",
-                    "title": "Design Principles Document"
-                }
-            ]
-        },
-        {
-            "lesson": "05",
-            "links": [
-                {
-                    "url": "lesson02/media-query.html",
-                    "title": "Media Queries"
+                    "title": "Local Storage BOM"
                 }
             ]
         },
@@ -76,10 +63,6 @@
                 {
                     "url": "lesson06/responsive-images.html",
                     "title": "Responsive Images"
-                },
-                {
-                    "url": "lesson02/design-principles.html",
-                    "title": "Design Principles Document"
                 }
             ]
         },
@@ -118,7 +101,7 @@
                 },
                 {
                     "url": "lesson09/prophets.html",
-                    "title": "Design Principles Document"
+                    "title": "Latter-Day Prophets"
                 }
             ]
         }
