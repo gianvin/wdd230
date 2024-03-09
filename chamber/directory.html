@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gina S. Ong">
+    <meta name="description" content="The Bulacan Chamber of Commerce is an organization that aims to establish Local Business Councils in every city and municipality of
+    Bulacan">
+    <title>Bulacan Chamber of Commerce: WDD 230 Project</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=RocknRoll+One&display=swap">
+    <link rel="icon" href="favicon-chamber.ico">
+    <meta property="og:title" content="The Bulacan Provincial Capitol">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.pinimg.com/originals/07/f1/cc/07f1cc98ad3675a6b0336dd67701d06e.jpg">
+    <meta property="og:url" content="https://www.pinterest.ph/">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo-chamber.webp" alt="Chamber Logo">
+            </a>
+            <h1>Bulacan Chamber of Commerce</h1>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <button id="menu">&#9776;</button>
+            <div class="social-icons">
+                <a href="https://facebook.com/gina.s.ong3/" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://www.linkedin.com/in/gina-ong-5715a2292/" target="_blank">
+                    <img src="images/linkedin.png" alt="linkedin icon"></a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+            </nav>
+            <button id="closeButton">&times;</button>
+        </header>
+    </div>
+    <div id="hero">
+        <div id="hero-box">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img id="hero-img" src="images/hero-large.webp" alt="Cebu Temple" width="1500" height="750">
+            </picture>
+
+        </div>
+        <h2>Join the Chamber</h2>
+        <main>
+            <div id="cards"></div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Bulacan Chamber of Commerce | Gina S. Ong | WDD 230 Project | <span id="lastUpdated"> |
+            </span></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
