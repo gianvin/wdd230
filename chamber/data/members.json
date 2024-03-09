@@ -6,7 +6,7 @@
             "phone": "+6344-441-5897",
             "email": "rosalies@yahoo.com",
             "website URLs": "https://rosalies@bulacanchamber.com.ph",
-            "membership level": "bronze"
+            "membership": "bronze"
         },
         {
             "name": "Oflodor Furniture",
@@ -14,7 +14,7 @@
             "phone": "+6344-498-2536",
             "email": "oflodor@gmail.com",
             "website URLs": "https://oflodor@bulacanchamber.com.ph",
-            "membership level": "Gold"
+            "membership": "Gold"
         },
         {
             "name": "Eat Bulaga Fireworks",
@@ -22,7 +22,7 @@
             "phone": "+6344-443-2639",
             "email": "eatbulaga@gmail.com",
             "website URLs": "https://eatbulaga@bulacanchamber.com.ph",
-            "membership level": "Bronze"
+            "membership": "Bronze"
         },
         {
             "name": "Princess Jewelry",
@@ -30,7 +30,7 @@
             "phone": "+6344-445-6923",
             "email": "princess@gmail.com",
             "website URLs": "https://princess@bulacanchamber.com.ph",
-            "membership level": "Gold"
+            "membership": "Gold"
         },
         {
             "name": "Three D's Fireworks",
@@ -38,7 +38,7 @@
             "phone": "+6344-446-3921",
             "email": "threeds@gmail.com",
             "website URLs": "https://threeds@bulacanchamber.com.ph",
-            "membership level": "Bronze"
+            "membership": "Bronze"
         },
         {
             "name": "R Jewelry Repair Shop",
@@ -46,7 +46,7 @@
             "phone": "+6344-442-1386",
             "email": "rjewelry@gmail.com",
             "website URLs": "https://rjewelry@bulacanchamber.com.ph",
-            "membership level": "Silver"
+            "membership": "Silver"
         },
         {
             "name": "AV Make Industries",
@@ -54,7 +54,7 @@
             "phone": "+6344-451-4785",
             "email": "avmake@gmail.com",
             "website URLs": "https://avmake@bulacanchamber.com.ph",
-            "membership level": "Silver"
+            "membership": "Silver"
         }
     ]
 }

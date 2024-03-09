@@ -550,6 +550,14 @@ article section img {
     border-radius: 10px;
 }
 
+article section ul li {
+    text-align: left;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
 article.grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -560,4 +568,33 @@ article.list section {
     border: 1px solid #ddd;
     padding: 10px;
     margin-bottom: 20px;
+}
+
+#businessDirectory {
+    grid-column: 1 /span 3;
+    text-align: left;
+    padding: 20px;
+}
+
+#directoryList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+#directoryList li {
+    margin-bottom: 10px;
+}
+
+.member-details {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+.member-details h4 {
+    grid-column: 1;
 }
