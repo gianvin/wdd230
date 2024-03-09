@@ -534,10 +534,6 @@ th {
     color: var(--forelight);
 }
 
-#memberdetails {
-    list-style-type: none;
-}
-
 article.grid section,
 article.list section {
     display: flex;
@@ -546,14 +542,6 @@ article.list section {
     text-align: center;
 }
 
-article.grid section img,
-article.list section img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
 
 article section img {
     width: 200px;

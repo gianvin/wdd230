@@ -9,6 +9,7 @@ gridbutton.addEventListener("click", () => {
 });
 
 listbutton.addEventListener("click", showList);
+
 function showList() {
     display.classList.add("list");
     display.classList.remove("grid");
@@ -24,20 +25,28 @@ display.addEventListener("click", (event) => {
     }
 });
 
-function displayMemberDetails(memberId) {
+fetch("data/members.json")
 
-    const member = membersData.members[memberId];
+    .then(response => response.json())
+    .then(data => generateBusinessDirectory(data.members))
+    .catch(error => console.error("Error fetching data:", error));
 
-    const listItem = document.createElement("li");
-    listItem.innerHTML = `
+function generateBusinessDirectory(members) {
+    const directoryList = document.getElementById("directoryList");
+
+    members.forEach((member) => {
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `
     <h3>${member.name}</h3>
     <p>Address: ${member.address}</p>
+    <p>Contact Number: ${member.phone}</p>
     <p>Email: ${member.email}</p>
     <p>Website: ${member["website URLs"]}</p>
-    <p>Icon: ${member.icon}</p>
     <p>Membership Level: ${member["Membership level"]}</p>
     `;
 
-    memberDetailsList.appendChild(listItem);
+        directoryList.appendChild(listItem);
+
+    });
 
 }
