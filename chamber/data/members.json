@@ -1,6 +1,7 @@
 {
     "members": [
         {
+            "id": "01",
             "name": "Rosalie's",
             "address": "Patubig, Marilao Bulacan",
             "phone number": "+6344-441-5897",
@@ -60,7 +61,7 @@
             "phone number": "+6344-451-4785",
             "email": "avmake@gmail.com",
             "website URLs": "https://avmake@bulacanchamber.com.ph",
-            "icon": "💺",
+            "icon": "🗄️",
             "membership level": "Silver"
         }
     ]

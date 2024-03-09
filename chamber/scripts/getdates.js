@@ -6,7 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var formattedDate = lastModifiedDate.toLocaleDateString('en-US', options);
 
-    document.getElementById("lastUpdated").textContent = "Last Updated: " + formattedDate;
+    var lastUpdatedElement = document.getElementById("lastUpdated");
+    if (lastUpdatedElement) {
+        lastUpdatedElement.textContent = "Last Updated: " + formattedDate;
+    }
+
 
 
     // script for hamburger menu//
@@ -17,11 +21,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     hamButton.addEventListener('click', function () {
-        nav.classList.toggle('open');
+        if (nav) {
+            nav.classList.toggle('open');
+        }
+
     });
 
     closeButton.addEventListener('click', function () {
-        nav.classList.remove('open');
+        if (nav) {
+            nav.classList.remove('open');
+        }
+
     });
 
 
@@ -34,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (modeButton.checked) {
             main.style.backgroundColor = '#000';
             main.style.color = '#fff';
-        } else if (main) {
+        } else {
             main.style.backgroundColor = 'rgb(79, 180, 119)';
             main.style.color = '#000';
         }
@@ -46,25 +56,26 @@ document.addEventListener('DOMContentLoaded', function () {
 //scipt for local storage//
 
 const sidebar = document.querySelector('aside');
-const visitTimestamp = localStorage.getItem('visitTimestamp');
-const oneDayInMillis = 24 * 60 * 60 * 1000;
-const currentTimestamp = new Date().getTime();
+if (sidebar) {
+    const visitTimestamp = localStorage.getItem('visitTimestamp');
+    const oneDayInMillis = 24 * 60 * 60 * 1000;
+    const currentTimestamp = new Date().getTime();
 
-if (!visitTimestamp) {
-    // if first visit//
-    sidebar.innerHTML = `<h3> Welcome! Let us know if you have any questions?</h3>`;
-    localStorage.setItem('visitTimestamp', currentTimestamp);
-} else {
-    const daysSinceLastVisit = Math.floor((currentTimestamp - visitTimestamp) / oneDayInMillis);
-
-    if (daysSinceLastVisit === 0) {
-        sidebar.innerHTML = `<h6> Back so soon! Awesome!</h6>`;
-
-    } else if (daysSinceLastVisit === 1) {
-        sidebar.innerHTML = `<h6>You last visited 1 day ago.</h6>`;
+    if (!visitTimestamp) {
+        // if first visit//
+        sidebar.innerHTML = `<h3> Welcome! Let us know if you have any questions?</h3>`;
+        localStorage.setItem('visitTimestamp', currentTimestamp);
     } else {
-        sidebar.innerHTML = `<h6>You last visited ${daysSinceLastVisit} days ago. </h6>`;
+        const daysSinceLastVisit = Math.floor((currentTimestamp - visitTimestamp) / oneDayInMillis);
+
+        if (daysSinceLastVisit === 0) {
+            sidebar.innerHTML = `<h6> Back so soon! Awesome!</h6>`;
+
+        } else if (daysSinceLastVisit === 1) {
+            sidebar.innerHTML = `<h6>You last visited 1 day ago.</h6>`;
+        } else {
+            sidebar.innerHTML = `<h6>You last visited ${daysSinceLastVisit} days ago. </h6>`;
+        }
+
     }
-
 };
-
