@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Rosalies",
+            "address": "Patubig, Marilao Bulacan",
+            "phone number": "+6344-441-5897",
+            "email": "rosalies@yahoo.com",
+            "website URLs": "https://rosalies@bulacanchamber.com.ph",
+            "icon": "🥐",
+            "membership level": "bronze"
+        },
+        {
+            "name": "Oflodor Furniture",
+            "address": "San Sebastian, Baliwag Bulacan",
+            "phone number": "+6344-498-2536",
+            "email": "oflodor@gmail.com",
+            "website URLs": "https://oflodor@bulacanchamber.com.ph",
+            "icon": "💺",
+            "membership level": "Gold"
+        },
+        {
+            "name": "Eat Bulaga Fireworks",
+            "address": "Wakas, Bocaue Bulacan",
+            "phone number": "+6344-443-2639",
+            "email": "eatbulaga@gmail.com",
+            "website URLs": "https://eatbulaga@bulacanchamber.com.ph",
+            "icon": "🎆",
+            "membership level": "Bronze"
+        },
+        {
+            "name": "Princess Jewelry",
+            "address": "Malhacan, Meycauyan Bulacan",
+            "phone number": "+6344-445-6923",
+            "email": "princess@gmail.com",
+            "website URLs": "https://princess@bulacanchamber.com.ph",
+            "icon": "💍",
+            "membership level": "Gold"
+        },
+        {
+            "name": "Three D's Fireworks",
+            "address": "Batia,Bocaue Bulacan",
+            "phone number": "+6344-446-3921",
+            "email": "threeds@gmail.com",
+            "website URLs": "https://threeds@bulacanchamber.com.ph",
+            "icon": "🧨",
+            "membership level": "Bronze"
+        },
+        {
+            "name": "R Jewelry Repair Shop",
+            "address": "Mc Arthur Highway Banga, Meycauaya Bulacan",
+            "phone number": "+6344-442-1386",
+            "email": "rjewelry@gmail.com",
+            "website URLs": "https://rjewelry@bulacanchamber.com.ph",
+            "icon": "👑",
+            "membership level": "Silver"
+        },
+        {
+            "name": "AV Make Industries",
+            "address": "Sta. Cruz, Baliwag Bulacan",
+            "phone number": "+6344-451-4785",
+            "email": "avmake@gmail.com",
+            "website URLs": "https://avmake@bulacanchamber.com.ph",
+            "icon": "💺",
+            "membership level": "Silver"
+        }
+    ]
+}
