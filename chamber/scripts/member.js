@@ -1,6 +1,6 @@
 const baseURL = "https://gianvin.github.io/wdd230";
 
-const linksURL = "https://gianvin.github.io/wdd230/chamber/data/member.json";
+const linksURL = "https://gianvin.github.io/wdd230/chamber/data/members.json";
 
 
 
