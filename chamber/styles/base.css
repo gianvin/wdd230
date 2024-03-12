@@ -534,6 +534,19 @@ th {
     color: var(--forelight);
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 article.grid section,
 article.list section {
     display: flex;
@@ -589,22 +602,70 @@ article.list section {
     margin-bottom: 10px;
 }
 
-.member-details {
+
+#cards {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
 }
 
-.member-details h4 {
-    grid-column: 1;
+.card {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
-section p :nth-child(even) {
-    background-color: #ccc;
-
+.card:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
-section p :nth-child(odd) {
+#cards h4 {
+    grid-column: span 7;
     background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
 
+#cards p {
+
+    margin-bottom: 5px;
+}
+
+.card.card {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+}
+
+.card.grid.img {
+    max-width: 100px;
+    height: auto;
+}
+
+.card.grid h3 {
+    margin: 10px 0;
+}
+
+.card.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.card.list img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card.list h3 {
+    margin: 0;
+}
+
+.card.list p {
+    margin: 5px 0;
 }

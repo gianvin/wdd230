@@ -51,18 +51,12 @@ function displayLinks(members) {
     directory.textContent = `Business Directory`;
     cards.appendChild(directory);
 
-    displayMember(members);
-
-    let picturesSection = document.createElement("section");
-    picturesSection.classList.add("card", "grid");
-    displayPicturesAndDetails(members, picturesSection);
-    cards.appendChild(picturesSection);
-
-    letnameSection = document.createElement("section");
+    let nameSection = document.createElement("section");
     nameSection = document.createElement("section");
-    namesSection.classlist.add("card", "list");
-    displayCompanyNames(members, namesScetion);
-    cards.appendChild(namesection);
+    nameSection.classList.add("card", "list");
+    displayCompanyNames(members, nameSection);
+    cards.appendChild(nameSection);
+
 }
 
 function displayPicturesAndDetails(members, section) {
@@ -96,7 +90,7 @@ function displayCompanyNames(members, section) {
         <p>Website: ${member.websiteURLs}</p>
         <p>Membership Level: ${member.membership}</p> `;
 
-        section.appenChild(card);
+        section.appendChild(card);
     });
 }
 
