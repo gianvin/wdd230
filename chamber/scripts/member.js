@@ -52,48 +52,52 @@ function displayLinks(members) {
     cards.appendChild(directory);
 
     displayMember(members);
+
+    let picturesSection = document.createElement("section");
+    picturesSection.classList.add("card", "grid");
+    displayPicturesAndDetails(members, picturesSection);
+    cards.appendChild(picturesSection);
+
+    letnameSection = document.createElement("section");
+    nameSection = document.createElement("section");
+    namesSection.classlist.add("card", "list");
+    displayCompanyNames(members, namesScetion);
+    cards.appendChild(namesection);
 }
 
-function displayMember(members) {
+function displayPicturesAndDetails(members, section) {
     members.forEach((member) => {
-        //elements to add in the div.cards element in html
-        let card = document.createElement("section");
-        let company = document.createElement("p");
-        let location = document.createElement("p");
-        let number = document.createElement("p");
-        let email = document.createElement("p");
-        let website = document.createElement("url")
-        let membership = document.createElement("p")
 
-        //h2 content to show the prophet's full name, birthdate and birthplace
-        company.textContent = `${member.name}`;
-        location.textContent = `Address: ${member.address}`;
-        number.textContent = `Contact Number: ${member.phone}`;
-        email.textContent = `Email Address: ${member.email}`;
-        website.textContent = `Website: ${member.websiteURLs}`;
-        membership.textContent = `Membership Level: ${member.membership}`;
+        let card = document.createElement("div");
+        card.classList.add("card");
 
+        card.innerHtML = `
+        <img src="${member.picture}" alt="${member.name}" />
+        <h3>${member.name}</h3>
+        <P>Address: ${member.address}</p>
+        <p>Contact Number: ${member.phone}</p>
+        <p>Website: ${member.websiteURLs}</p>`;
 
-        //Append the section card()) with the created element
-        card.appendChild(company);
-        card.appendChild(location);
-        card.appendChild(number);
-        card.appendChild(email);
-        card.appendChild(website);
-        card.appendChild(membership);
-
-        cards.appendChild(card);
-    })
+        section.appendChild(card);
+    });
 }
-async function getMemberData(url) {
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        //console.table(data.members);
-        displayMembers(data.memberss);
-    } catch (error) {
-        console.error("Error fetching member data:", error)
-    }
+
+function displayCompanyNames(members, section) {
+    members.forEach((member) => {
+
+        let card = document.createElement("div");
+        card.classList.add("card");
+
+        card.innerHTML = `
+        <h3>${member.name}</h3>
+        <P>Address: ${member.address}</p>
+        <p>Contact Number: ${member.phone}</p>
+        <p>Email Address: ${member.email}</p>
+        <p>Website: ${member.websiteURLs}</p>
+        <p>Membership Level: ${member.membership}</p> `;
+
+        section.appenChild(card);
+    });
 }
 
 getLinks();
