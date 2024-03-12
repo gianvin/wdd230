@@ -577,7 +577,7 @@ article.list section {
 }
 
 #directoryList {
-    list-style-type: none;
+    list-style-type: disc;
     padding: 0;
     margin: 0;
     display: grid;
@@ -597,4 +597,14 @@ article.list section {
 
 .member-details h4 {
     grid-column: 1;
+}
+
+section p :nth-child(even) {
+    background-color: #ccc;
+
+}
+
+section p :nth-child(odd) {
+    background-color: #333;
+
 }

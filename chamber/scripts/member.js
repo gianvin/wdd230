@@ -58,7 +58,7 @@ function displayMember(members) {
     members.forEach((member) => {
         //elements to add in the div.cards element in html
         let card = document.createElement("section");
-        let company = document.createElement("h4");
+        let company = document.createElement("p");
         let location = document.createElement("p");
         let number = document.createElement("p");
         let email = document.createElement("p");
