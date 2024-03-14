@@ -40,5 +40,5 @@ if (pageVisits !== 0) {
 pageVisits++;
 localStorage.setItem("pageVisits-localStorage", pageVisits);
 
-
+//script for Weather API//
 
