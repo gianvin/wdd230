@@ -219,7 +219,6 @@ footer {
 }
 
 .card-weather ul li:first-child::before {
-    content: "🫡";
     margin: 0 5px;
 }
 

@@ -112,7 +112,7 @@ async function updatePage() {
         currentTemp.innerHTML = `${currentTempValue}&deg;F`;
 
         const desc = currentData.weather[0].description.charAt(0).toUpperCase() + currentData.weather[0].description.slice(1);
-        weatherIcon.setAttribute("src", `https://openweathermap.org/img/w/${currentData.weather[0].icon}.png`);
+        weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${currentData.weather[0].icon}.png`);
         weatherIcon.setAttribute("alt", desc);
         captionDesc.textContent = desc;
 
