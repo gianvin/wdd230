@@ -114,8 +114,9 @@ footer {
     background-color: rgb(63, 102, 52);
     font-style: normal;
     font-family: Roboto;
-    color: antiquewhite;
+    color: white;
     align-self: end;
+    font-size: xx-large;
 }
 
 
@@ -129,15 +130,28 @@ footer {
     margin-bottom: 10px;
 }
 
-.card-events,
+.event-banner,
 .card-weather {
     grid-column: 1/4;
 }
 
-.card-events {
-    background-color: lightgreen;
-    padding: 40px;
+.event-banner {
+    background-color: #f9f9f9;
+    padding: 200px;
+    margin-bottom: 20px;
     grid-column: 1/2;
+}
+
+.event-banner h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.banner-content img {
+    max-width: 300%;
+    margin-right: 20px;
+    margin-left: 29px;
+
 }
 
 .card-weather {
