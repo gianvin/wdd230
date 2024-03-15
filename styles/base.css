@@ -171,6 +171,13 @@ h3 {
     align-items: center;
 }
 
+.card-information img #curret-temp {
+    display: flex;
+    align-items: left;
+}
+
+
+
 #cards ul {
     list-style: none;
     text-align: left;
