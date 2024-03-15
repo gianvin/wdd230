@@ -7,13 +7,13 @@ async function fetchData() {
         const response = await fetch(apiUrl);
         const data = await response.json();
 
-        const temperature = data.main.temp;
+        const currentTemp = data.main.temp;
         const windSpeed = data.wind.speed;
 
-        document.getElementById('temperature').textContent = `Temperature: ${temperature}\u2103`;
+        document.getElementById('current-temp').textContent = `Temperature: ${currentTemp}\u2103`;
         document.getElementById('windSpeed').textContent = `Wind Speed: ${windSpeed} m/s`;
 
-        const windChill = calculateWindChill(temperature, windSpeed);
+        const windChill = calculateWindChill(currentTemp, windSpeed);
         document.getElementById(`windChill`).textContent = `Wind Chill: ${windChill}\u2103`;
     } catch (error) {
         console.error("Error fetching data: ", error);
@@ -22,9 +22,9 @@ async function fetchData() {
 }
 
 
-function calculateWindChill(temperature, windSpeed) {
+function calculateWindChill(currentTemp, windSpeed) {
 
-    const windChill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
+    const windChill = 35.74 + 0.6215 * currentTemp - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * currentTemp * Math.pow(windSpeed, 0.16);
     return windChill.toFixed(2);
 }
 

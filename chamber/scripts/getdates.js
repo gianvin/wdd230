@@ -79,3 +79,68 @@ if (sidebar) {
 
     }
 };
+
+//script for weather data //
+const currentTemp = document.querySelector("#current-temp");
+const weatherIcon = document.querySelector("#weather-icon");
+const captionDesc = document.querySelector("figcaption");
+const forecastContainer = document.querySelector("#forecast");
+
+
+const apiKey = "927c80f45d4cb1121616e5d1ffc5c706";
+const latitude = 14.77;
+const longitude = 121.02;
+
+async function fetchWeatherData() {
+    const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
+    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`
+
+    const [currentResponse, forecastResponse] = await Promise.all([fetch(currentWeatherUrl), fetch(forecastUrl)]);
+    const [currentData, forecastData] = await Promise.all([currentResponse.json(), forecastResponse.json()]);
+    return { currentData, forecastData };
+}
+
+async function updatePage() {
+    try {
+        const { currentData, forecastData } = await fetchWeatherData();
+
+        if (!currentData || !currentData.weather || currentData.weather.length === 0) {
+            throw new Error("Current weather data not available");
+        }
+
+        const currentTempValue = Math.round(currentData.main.temp);
+        currentTemp.innerHTML = `${currentTempValue}&deg;F`;
+
+        const desc = currentData.weather[0].description.charAt(0).toUpperCase() + currentData.weather[0].description.slice(1);
+        weatherIcon.setAttribute("src", `https://openweathermap.org/img/w/${currentData.weather[0].icon}.png`);
+        weatherIcon.setAttribute("alt", desc);
+        captionDesc.textContent = desc;
+
+        renderForecast(forecastData);
+    } catch (error) {
+        console.error("An error occured:", error);
+    }
+}
+
+function renderForecast(forecastData) {
+    forecastContainer.innerHTML = "";
+
+    for (let i = 0; i < forecastData.list.length; i += 8) {
+        const forecastItem = forecastData.list[i];
+        const forecastTemp = Math.round(forecastItem.main.temp);
+        const forecastDesc = forecastItem.weather[0].description.charAt(0).toUpperCase() + forecastItem.weather[0].description.slice(1);
+        const forecastIcon = `https://openweathermap.org/img/w/${forecastItem.weather[0].icon}.png`;
+
+        const forecastCard = document.createElement("div");
+        forecastCard.classList.add("forecast-card");
+        forecastCard.innerHTML = `<img src="${forecastIcon}" alt="${forecastDesc}">
+        <div>
+            <p>${forecastTemp}&deg;F</p>
+            <p>${forecastDesc}</p>
+        </div>`;
+        forecastContainer.appendChild(forecastCards);
+    }
+}
+
+
+updatePage();
