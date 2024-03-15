@@ -138,7 +138,7 @@ function renderForecast(forecastData) {
             <p>${forecastTemp}&deg;F</p>
             <p>${forecastDesc}</p>
         </div>`;
-        forecastContainer.appendChild(forecastCards);
+        forecastContainer.appendChild(forecastCard);
     }
 }
 

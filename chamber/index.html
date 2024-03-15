@@ -61,17 +61,20 @@
         </div>
         <h2>Join the Chamber</h2>
         <main>
-            <section class="card-events">
+            <section class="event-banner">
                 <h3>Events</h3>
-                <ul class="no-bullet">
-                    <li>Seminar on FDA Registration Requirements, Packaging and Labelling </li>
-                </ul>
+                <div class="banner-content">
+                    <img src="images/event-banner.webp" alt="" Event Banner>
+                </div>
             </section>
             <section class="card-weather">
                 <h3>Weather</h3>
                 <ul class="no-bullet">
                     <li>Marilao Bulacan, Philippines </li>
                     <li id="current-temp">Weather:</li>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                    <li id="forecast"></li>
                     <li id="windSpeed"> Wind Speed:</li>
                     <li id="windChill">Wind Chill:</li>
                 </ul>
@@ -108,8 +111,8 @@
         </p>
     </footer>
 
-    <script src="scripts/getdates.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
 </body>
 
 </html>
