@@ -67,7 +67,7 @@
                     <picture>
                         <source srcset="images/banner-small.webp" media="(max-width: 500px)">
                         <source srcset="images/banner-medium.webp" media="(max-width: 1000px)">
-                        <img id="banner" src="images/banner-large.webp" alt="Event-Banner" width="1500" height="750">
+                        <img src="images/banner-large.webp" alt="Event-Banner" width="1500" height="750">
                     </picture>
                 </div>
             </section>
@@ -76,11 +76,13 @@
                 <ul class="no-bullet">
                     <li>Marilao Bulacan, Philippines </li>
                     <li id="current-temp">Weather:</li>
-                    <img id="weather-icon" src="" alt="">
-                    <figcaption></figcaption>
-                    <li id="forecast"></li>
-                    <li id="windSpeed"> Wind Speed:</li>
-                    <li id="windChill">Wind Chill:</li>
+                </ul>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+                <ul class="no-bullet"></ul>
+                <li id="forecast"></li>
+                <li id="windSpeed"> Wind Speed:</li>
+                <li id="windChill">Wind Chill:</li>
                 </ul>
             </section>
             <section class="card-advertisements">
@@ -110,9 +112,7 @@
     </div>
     <footer>
         <p>&copy; 2024 Bulacan Chamber of Commerce | Gina S. Ong | WDD 230 Project |
-        <p id="lastUpdated"> |
-        </p>
-        </p>
+        <p id="lastUpdated"> | </p>
     </footer>
 
     <script src="scripts/getdates.js" defer></script>
