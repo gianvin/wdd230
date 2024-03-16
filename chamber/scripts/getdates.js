@@ -146,10 +146,16 @@ function renderForecast(forecastData) {
 updatePage();
 
 // script for the banner //
+window.addEventListener("DOMContentLoaded", (event) => {
+    console.log("DOM Loaded");
+    const currentDay = new Date().getDay();
+    console.log("Current Day:", currentDay);
 
-const currentDay = new Date().getDay();
+    if (currentDay >= 1 && currentDay <= 3) {
+        console.log("Displaying Banner");
 
-if (currentDay >= 1 && currentDay <= 3) {
+        document.getElementById("banner").style.display = "block";
+    }
+});
 
-    document.getElementById("banner").style.display = "block";
-}
+
