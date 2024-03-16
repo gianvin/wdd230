@@ -144,3 +144,12 @@ function renderForecast(forecastData) {
 
 
 updatePage();
+
+// script for the banner //
+
+const currentDay = new Date().getDay();
+
+if (currentDay >= 1 && currentDay <= 3) {
+
+    document.getElementById("banner").style.display = "block";
+}
