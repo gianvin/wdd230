@@ -204,17 +204,17 @@ footer {
 }
 
 .card-advertisements ul li:first-child h4::before {
-    content: "🏨";
+    content: "💺";
     margin: 0 5px;
 }
 
 .card-advertisements ul li:nth-child(2) h4::before {
-    content: "🍽️";
+    content: "💍";
     margin: 0 5px;
 }
 
 .card-advertisements ul li:nth-child(3) h4::before {
-    content: "✈️";
+    content: "💎";
     margin: 0 5px;
 }
 

@@ -125,16 +125,20 @@ async function updatePage() {
 function renderForecast(forecastData) {
     forecastContainer.innerHTML = "";
 
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
     for (let i = 0; i < forecastData.list.length; i += 8) {
         const forecastItem = forecastData.list[i];
         const forecastTemp = Math.round(forecastItem.main.temp);
         const forecastDesc = forecastItem.weather[0].description.charAt(0).toUpperCase() + forecastItem.weather[0].description.slice(1);
         const forecastIcon = `https://openweathermap.org/img/w/${forecastItem.weather[0].icon}.png`;
+        const forecastDate = new Date(forecastItem.dt_txt);
 
         const forecastCard = document.createElement("div");
         forecastCard.classList.add("forecast-card");
         forecastCard.innerHTML = `<img src="${forecastIcon}" alt="${forecastDesc}">
         <div>
+            <p>${days[forecastDate.getDay()]}</p>
             <p>${forecastTemp}&deg;F</p>
             <p>${forecastDesc}</p>
         </div>`;
