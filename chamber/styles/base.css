@@ -18,6 +18,7 @@ body {
 }
 
 header {
+    display: flex;
     background-color: rgb(63, 102, 52);
     font-style: normal;
     font-family: Roboto;
@@ -29,8 +30,8 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .logo {
@@ -44,14 +45,28 @@ main {
     overflow: hidden;
 }
 
+#logo-wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+#logo-link {
+    margin-right: 10px;
+}
+
+#toggle-wrapper {
+    position: relative;
+}
+
 h1 {
     color: white;
     margin: 0;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    display: grid;
-    grid-column: 2;
-    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
 }
 
 h2 {
@@ -95,9 +110,11 @@ nav a {
     gap: 20px;
     width: 100%;
     align-self: stretch;
+    overflow: hidden;
 }
 
 #hero-box {
+    position: relative;
     grid-column: 1;
 
 }
@@ -130,10 +147,7 @@ footer {
     margin-bottom: 10px;
 }
 
-.event-banner,
-.card-weather {
-    grid-column: 1/4;
-}
+
 
 .event-banner {
     background-color: lightgreen;
@@ -143,11 +157,15 @@ footer {
     grid-row: 1/3;
 }
 
-.event-banner h3 {
+.event-banner h3,
+.card-weather h3,
+.card-advertisements {
     font-size: xx-large;
     margin-top: 5px;
     margin-bottom: 5px;
+
 }
+
 
 .card-weather {
     background-color: lightgreen;
@@ -255,10 +273,9 @@ h4 {
 }
 
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+    position: absolute;
+    top: 50%;
+    transform: taranslateY(-50%0);
 }
 
 .switch input {
@@ -310,6 +327,15 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+.mode-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+    color: #fff;
+    font-size: 14px;
 }
 
 /* this is the second pagestyles for discover.html */

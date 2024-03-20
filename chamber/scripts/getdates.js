@@ -44,9 +44,11 @@ document.addEventListener('DOMContentLoaded', function () {
         if (modeButton.checked) {
             main.style.backgroundColor = '#000';
             main.style.color = '#fff';
+            modeButton.nextElementSibling.textContent = 'Dark Mode';
         } else {
             main.style.backgroundColor = 'rgb(79, 180, 119)';
             main.style.color = '#000';
+            modeButton.nextElementSibling.textContent = "Light Mode";
         }
 
     });
