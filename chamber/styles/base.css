@@ -267,6 +267,22 @@ h4 {
     height: 0;
 }
 
+.mode-text {
+    position: absolute;
+    top: -20px;
+    left: calc(100% + 10px);
+    color: #fff;
+    font-size: 14px;
+}
+
+input:checked+.slider+.mode-text {
+    content: "Dark Mode";
+}
+
+input:checked+.slider+.mode-text {
+    left: -80px;
+}
+
 .slider {
     position: absolute;
     cursor: pointer;

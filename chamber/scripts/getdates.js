@@ -38,15 +38,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // script for the toggle switch//
     const modeButton = document.querySelector('.switch input');
+    const modeText = document.querySelector('.mode-text');
     const main = document.querySelector('body');
 
     modeButton.addEventListener('click', () => {
         if (modeButton.checked) {
             main.style.backgroundColor = '#000';
             main.style.color = '#fff';
+            modeText.textContent = 'Dark Mode'
         } else {
             main.style.backgroundColor = 'rgb(79, 180, 119)';
             main.style.color = '#000';
+            modeText.textContent = 'LightMode';
         }
 
     });
