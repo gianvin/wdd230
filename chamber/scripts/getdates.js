@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             main.style.backgroundColor = 'rgb(79, 180, 119)';
             main.style.color = '#000';
-            modeText.textContent = 'LightMode';
+            modeText.textContent = 'Light Mode';
         }
 
     });
