@@ -46,7 +46,7 @@
                 <a href="index.html">Home</a>
                 <a href="discover.html">Discover</a>
                 <a href="directory.html">Directory</a>
-                <a href="join.html">Join</a>
+                <a href="join.html" class="active">Join</a>
             </nav>
             <button id="closeButton">&times;</button>
         </header>
@@ -63,135 +63,142 @@
                 <h2>Join the Chamber</h2>
             </a>
             <main>
-                <h1>Membership Application Form</h1>
-                <form method="get" action="thankyou.html" class="wf1">
-                    <fieldset>
-                        <legend>Applicant Information</legend>
-                        <label>First Name*<input type="text" name="fname" required></label>
-                        <label>Last Name*<input type="text" name="lname" required></label>
-                        <label>Position/Title*<input type="text" name="position" id="position" pattern="[A-Za-z-]{8,}$"
-                                required></label>
-                        <label>Email Address*<input type="email" name="email" id="email" placeholder="someone@gmail.com"
-                                required></label>
-                        <label for="number">Mobile Phone Number*<input type="tel" name="mobNumber" id="number"
-                                placeholder="1235551234" required></label>
-                        <label>Business Name*<input type="text" name="bName" id="bName" required></label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Membership Information</legend>
-                        <div>Level</div>
-                        <label><input type="radio" name="level" value="nonProfit">Non-Profit</label>
-                        <label><input type="radio" name="level" value="bronze">Bronze Membership</label>
-                        <label><input type="radio" name="level" value="silver">Silver Membership</label>
-                        <label><input type="radio" name="level" value="gold">Gold Membership</label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Business Description</legend>
-                        <label for="businessDescription">Describe your business</label>
-                        <textarea id="businessDescription" name="description" rows="4"></textarea>
-                    </fieldset>
+                <div class="join-page">
+                    <div class="wf1">
+                        <h1>Membership Application Form</h1>
+                        <form method="get" action="thankyou.html" class="wf1">
+                            <fieldset>
+                                <legend>Applicant Information</legend>
+                                <label>First Name*<input type="text" name="fname" required></label>
+                                <label>Last Name*<input type="text" name="lname" required></label>
+                                <label>Position/Title*<input type="text" name="position" id="position"
+                                        pattern="[A-Za-z-]{8,}$" required></label>
+                                <label>Email Address*<input type="email" name="email" id="email"
+                                        placeholder="someone@gmail.com" required></label>
+                                <label for="number">Mobile Phone Number*<input type="tel" name="mobNumber" id="number"
+                                        placeholder="1235551234" required></label>
+                                <label>Business Name*<input type="text" name="bName" id="bName" required></label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Membership Information</legend>
+                                <div>Level</div>
+                                <label><input type="radio" name="level" value="nonProfit">Non-Profit</label>
+                                <label><input type="radio" name="level" value="bronze">Bronze Membership</label>
+                                <label><input type="radio" name="level" value="silver">Silver Membership</label>
+                                <label><input type="radio" name="level" value="gold">Gold Membership</label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Business Description</legend>
+                                <label for="businessDescription">Describe your business</label>
+                                <textarea id="businessDescription" name="description" rows="4"></textarea>
+                            </fieldset>
 
-                    <input type="hidden" id="hiddenfield" name="hiddenfield" value="This is a hidden value">
+                            <input type="hidden" id="hiddenfield" name="hiddenfield" value="This is a hidden value">
 
-                    <input type="submit" value="Submit Membership Application"
-                        title="Click to submit your membership application">
-                </form>
-            </main>
+                            <input type="submit" value="Submit Membership Application"
+                                title="Click to submit your membership application">
+                        </form>
+                    </div>
+
+                </div>
+
+                <table>
+                    <caption>Table 1: Membership Fees and Benefits</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="2" scope="colgroup">BCOC Membersip Fees and Benefits</th>
+                        </tr>
+                        <tr>
+
+                            <th scope="col">Level of Membership</th>
+                            <th scope="col">Benefits</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Non-Profit</td>
+                            <td>
+                                <ul>
+                                    <li>Fee of $0</li>
+                                    <li>Access to networking events.</li>
+                                    <li>Inclusion in the chamber's online directory.</li>
+                                    <li>Participation in community outreach programs. recognition as a non-profit
+                                        supporter in
+                                        chamber
+                                        communications.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bronze</td>
+                            <td>
+                                <ul>
+                                    <li>Fee of $100</li>
+                                    <li>All Non-Profit benefits.</li>
+                                    <li>Logo placement on the chamber website. </li>
+                                    <li>One
+                                        featured
+                                        article in the chamber newsletter.
+                                    </li>
+                                    <li>Discount rate for chamber-sponsored events.</li>
+                                    <li>Access to educational workshops and seminars.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Silver</td>
+                            <td>
+                                <ul>
+                                    <li>Fee of $200</li>
+                                    <li>All Bronze benefits. .</li>
+                                    <li>Increase visibility with a dedicated section on the
+                                        section on the chamber website.
+                                    </li>
+                                    <li>Two featured articles in the chamber newsletter.</li>
+                                    <li>Priority
+                                        sponsorship opportunities for events.
+                                    </li>
+                                    <li>Access to exclusive induustry reports and market
+                                        research.
+                                    </li>
+                                </ul>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Gold</td>
+                            <td>
+                                <ul>
+                                    <li>Fee of $300</li>
+                                    <li>All Silver benefits. .</li>
+                                    <li>Premier logo placement on the chamber website.
+                                    </li>
+                                    <li>Three
+                                        featured article in the chamber newsletter.
+                                    </li>
+                                    <li>Exclusive access to VIP events and roundtable
+                                        discussions.
+
+                                    </li>
+                                    <li>Personalized consultation sessions with chamber experts
+                                    </li>
+                                    <li>priority consideration
+                                        for
+                                        chamber leadership roles.
+                                    </li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
         </div>
-        <table>
-            <caption>Table 1: Membership Fees and Benefits</caption>
-            <thead>
-                <tr>
-                    <th colspan="2" scope="colgroup">BCOC Membersip Fees and Benefits</th>
-                </tr>
-                <tr>
-
-                    <th scope="col">Level of Membership</th>
-                    <th scope="col">Benefits</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Non-Profit</td>
-                    <td>
-                        <ul>
-                            <li>Fee of $0</li>
-                            <li>Access to networking events.</li>
-                            <li>Inclusion in the chamber's online directory.</li>
-                            <li>Participation in community outreach programs. recognition as a non-profit supporter in
-                                chamber
-                                communications.</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Bronze</td>
-                    <td>
-                        <ul>
-                            <li>Fee of $100</li>
-                            <li>All Non-Profit benefits.</li>
-                            <li>Logo placement on the chamber website. </li>
-                            <li>One
-                                featured
-                                article in the chamber newsletter.
-                            </li>
-                            <li>Discount rate for chamber-sponsored events.</li>
-                            <li>Access to educational workshops and seminars.</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Silver</td>
-                    <td>
-                        <ul>
-                            <li>Fee of $200</li>
-                            <li>All Bronze benefits. .</li>
-                            <li>Increase visibility with a dedicated section on the
-                                section on the chamber website.
-                            </li>
-                            <li>Two featured articles in the chamber newsletter.</li>
-                            <li>Priority
-                                sponsorship opportunities for events.
-                            </li>
-                            <li>Access to exclusive induustry reports and market
-                                research.
-                            </li>
-                        </ul>
-                    </td>
-
-                </tr>
-                <tr>
-                    <td>Gold</td>
-                    <td>
-                        <ul>
-                            <li>Fee of $300</li>
-                            <li>All Silver benefits. .</li>
-                            <li>Premier logo placement on the chamber website.
-                            </li>
-                            <li>Three
-                                featured article in the chamber newsletter.
-                            </li>
-                            <li>Exclusive access to VIP events and roundtable
-                                discussions.
-
-                            </li>
-                            <li>Personalized consultation sessions with chamber experts
-                            </li>
-                            <li>priority consideration
-                                for
-                                chamber leadership roles.
-                            </li>
-                        </ul>
-
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        </main>
         <footer>
             <p>&copy; 2024 Bulacan Chamber of Commerce | Gina S. Ong | WDD 230 Project | <span id="lastUpdated"> |
                 </span></p>
         </footer>
-
+        <script src="scripts/getdates.js"></script>
         <script src="scripts/hidden.js"></script>
 </body>
 
