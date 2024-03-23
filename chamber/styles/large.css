@@ -31,4 +31,20 @@
     iframe {
         width: 5%;
     }
+
+    .event-banner {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    .card-weather {
+        grid-column: 1 / -1;
+        ;
+        grid-row: 3;
+    }
+
+    .card-advertisements {
+        grid-column: 1 / -1;
+        grid-row: 4;
+    }
 }
