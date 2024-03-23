@@ -81,10 +81,7 @@ if (sidebar) {
         }
 
     }
-} else {
-
-    console.error("Sidebar element not found.");
-}
+};
 
 //script for weather data //
 const currentTemp = document.querySelector("#current-temp");

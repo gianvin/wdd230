@@ -643,134 +643,66 @@ body {
 }
 
 /* styles for directory html */
-article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-article.grid section,
-article.list section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-
-article section img {
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-article section ul li {
-    text-align: left;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-
-}
-
-article.grid {
+#cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-article.list section {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-#businessDirectory {
-    grid-column: 1 /span 3;
-    text-align: left;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
     padding: 20px;
 }
 
+
+.card {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
 #directoryList {
-    list-style-type: disc;
-    padding: 0;
-    margin: 0;
+    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: auto auto auto auto auto auto;
     grid-gap: 20px;
 }
 
 #directoryList li {
-    margin-bottom: 10px;
-}
-
-
-#cards {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 20px;
-}
-
-.card {
+    list-style-type: none;
+    border: 1px solid #ccc;
     border-radius: 8px;
-    border: 1px solid #ddd;
     padding: 15px;
-    margin-bottom: 20px;
-}
-
-.card:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-#cards h4 {
-    grid-column: span 7;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-#cards p {
-
-    margin-bottom: 5px;
-}
-
-.card.card {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 20px;
-}
-
-.card.grid.img {
-    max-width: 100px;
-    height: auto;
-}
-
-.card.grid h3 {
-    margin: 10px 0;
-}
-
-.card.list {
-    display: flex;
-    flex-direction: column;
-}
-
-.card.list img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.card.list h3 {
+#directoryList h3 {
     margin: 0;
+    font-size: 18px;
 }
 
-.card.list p {
+#directoryList p {
     margin: 5px 0;
+    font-size: 14px;
 }
 
 /* style for thank you */

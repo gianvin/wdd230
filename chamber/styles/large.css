@@ -16,6 +16,30 @@
         display: none;
     }
 
+    #directoryList {
+        padding: 20px;
+        display: table;
+        width: 100%;
+    }
+
+    #directoryList li {
+        display: table-row;
+    }
+
+    #directoryList li>* {
+        display: table-cell;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+
+    #directoryList h3,
+    #directoryList p {
+        margin: 0;
+        font-size: 16px;
+    }
+
 
 }
 
@@ -59,5 +83,18 @@
     .card {
         width: 100%;
         max-width: 600px;
+    }
+
+    #directoryList li {
+        margin-bottom: 20px;
+    }
+
+    #directoryList h3 {
+        font-size: 18px;
+    }
+
+    #directoryList p {
+        margin: 5px 0;
+        font-size: 14px;
     }
 }
