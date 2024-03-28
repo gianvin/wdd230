@@ -1,0 +1,43 @@
+{
+    "types": [
+        {
+            "type": "Scooters",
+            "models": [
+                {
+                    "brand": "Honda Metropolitan (49cc)",
+                    "capacity": "1 person"
+                },
+                {
+                    "brand": "Honda Dio (110cc)",
+                    "capacity": "2 person"
+                },
+                {
+                    "brand": "Honda PCX 150 (1149cc)",
+                    "capacity": "2 person"
+                }
+            ]
+        },
+        {
+            "type": "ATVs",
+            "models": [
+                {
+                    "brand": "Honda Pioneer 1000",
+                    "capacity": "4 person"
+                }
+            ]
+        },
+        {
+            "type": "jeeps",
+            "models": [
+                {
+                    "brand": "Jeep Wrangler 4 door manual with A/C",
+                    "capacity": "5 person"
+                },
+                {
+                    "brand": "Jeep Wrangler 2 door manual - open air",
+                    "capacity": "5 person"
+                }
+            ]
+        }
+    ]
+}
