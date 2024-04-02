@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=RocknRoll+One&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    padding: 3em;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+    background-color: teal;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: left;
+}
+
+h2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    background-color: darkgray;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    transform: translateX(-50%);
+}
+
+
+nav {
+    text-align: right;
+    display: flex;
+    gap: 20px;
+    padding: 35px;
+}
+
+nav a:hover {
+    color: white;
+    border-radius: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 30px;
+    transition: border-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+nav a.active {
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+#hero {
+    position: relative;
+    display: grid;
+    grid-column: 1/4;
+    gap: 20px;
+    width: 100%;
+    align-self: stretch;
+}
+
+#hero-box {
+    grid-column: 1/4;
+
+}
+
+#hero-img {
+    width: 100%;
+}
+
+
+footer {
+    display: grid;
+    padding: 1.2em;
+    grid-column: 1/4;
+    background-color: teal;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
