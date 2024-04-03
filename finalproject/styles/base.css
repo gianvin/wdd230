@@ -27,8 +27,8 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
 .logo {
@@ -50,15 +50,72 @@ h1 {
 
 h2 {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 50%;
-    background-color: darkgray;
+    background-color: teal;
     padding: 10px;
     margin: 10px;
     color: white;
+    font-size: xx-large;
     transform: translateX(-50%);
 }
 
+h3 {
+    text-align: left;
+    font-size: 50px;
+
+}
+
+h4 {
+    text-align: center;
+    font-size: 30px;
+}
+
+h5 {
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.rental-info {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1 fr;
+    grid-gap: 20px;
+}
+
+.rental-info picture {
+    max-width: 100%;
+    height: auto;
+}
+
+.rental-info img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-weather {
+    grid-column-end: span 1;
+}
+
+#max-temp-display {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+#close-max-temp {
+    background-color: transparent;
+    ;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+}
 
 nav {
     text-align: right;
@@ -106,9 +163,11 @@ nav a.active {
 }
 
 
+
 footer {
     display: grid;
     padding: 1.2em;
+    margin-top: 20px;
     grid-column: 1/4;
     background-color: teal;
     color: white;
@@ -151,10 +210,10 @@ footer {
     transform: translateY(-50%);
     color: #333;
     font-size: 20px;
-    padding: 50px;
+    padding: 5px;
     font-family: Roboto;
     margin-left: auto;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 input:checked+.slider+.mode-text {

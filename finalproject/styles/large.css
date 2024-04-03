@@ -1,0 +1,18 @@
+@media screen and (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .rental-info {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .card-weather {
+        grid-column: span 1;
+    }
+}
