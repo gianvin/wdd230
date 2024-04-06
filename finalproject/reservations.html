@@ -63,6 +63,86 @@
                 </a>
             </div>
             <main>
+                <div class="reservation-page">
+                    <div class="wf1">
+                        <h1>Reservation Form</h1>
+                        <form method="get" action="thankyou.html" class="wf1">
+                            <fieldset>
+                                <legend>Customer Information</legend>
+                                <label>First Name*<input type="text" name="fname" required></label>
+                                <label>Last Name*<input type="text" name="lname" required></label>
+                                <label>Email Address*<input type="email" name="email" id="email"
+                                        placeholder="someone@gmail.com" required></label>
+                                <label for="number">Mobile Phone Number*<input type="tel" name="mobNumber" id="number"
+                                        placeholder="1235551234" required></label>
+                                <label>Address*<input type="text" name="address" id="addres" required></label>
+                                <label for="cruise-line">Cruise Line (if applicable):<input type="text"
+                                        name="cruise-line" id="cruise-line"></label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Rental Information</legend>
+                                <label for="dor">Date of Reservation*<input type="date" id="dor" name="dor"
+                                        required></label>
+                                <div id="type">Rental Type</div>
+                                <label><input type="radio" name="type" value="metropolitan">Honda Metropolitan Half
+                                    Day</label>
+                                <label><input type="radio" name="type" value="metropolitan">Honda Metropolitan Whole
+                                    Day</label>
+                                <label><input type="radio" name="type" value="dio">Honda Dio Half Day</label>
+                                <label><input type="radio" name="type" value="dio">Honda Dio Whole Day</label>
+                                <label><input type="radio" name="type" value="pcx">Honda PCX150 Half Day</label>
+                                <label><input type="radio" name="type" value="pcx">Honda PCX150 Whole Day</label>
+                                <label><input type="radio" name="type" value="atv">Honda Pioneer ATV Half Day</label>
+                                <label><input type="radio" name="type" value="atv">Honda Pioneer ATV Whole Day</label>
+                                <label><input type="radio" name="type" value="jeep">Wrangler 4 Door w/Aircon Half
+                                    Day</label>
+                                <label><input type="radio" name="type" value="jeep">Wrangler 4 Door w/Aircon Whole
+                                    Day</label>
+                                <label><input type="radio" name="type" value="jeep">Wrangler 2 Door Open Air Half
+                                    Day</label>
+                                <label><input type="radio" name="type" value="jeep">Wrangler 2 Door Open Air Whole
+                                    Day</label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Comment</legend>
+                                <label for="special-accommodation">State your needs and location of your drop-off
+                                    request</label>
+                                <textarea id="special-accomodation" name="comment" rows="4"></textarea>
+                            </fieldset>
+
+                            <input type="hidden" id="hiddenfield" name="hiddenfield" value="This is a hidden value">
+
+                            <input type="submit" value="Submit Reservation"
+                                title="Click to submit your membership application">
+                        </form>
+                    </div>
+
+                </div>
+                <table>
+                    <caption>Table 1: Rental Agreement Information</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="2" scope="colgroup">Rental Services and Agreements</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>A $50 security deposit is required to confirm reservations.</li>
+                                    <li>A valid driver's license is require in hand at the time of the rental.</li>
+                                    <li>No one under the age of 12 years age are allowed to ride on the scooters.</li>
+                                    <li>Fuel charge is not included.</li>
+                                    <li>Unlimited mileage.</li>
+                                    <li>Liability insurance is included.</li>
+                                    <li>Damage insurance is available for purchase.</li>
+                                    <li>Free Delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                                    <li>Payment via Google Pay, Apple Pay, cash, credit card, or venmo.</li>
+                                    <li>Rentals may be returned to either physical location.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
 
             </main>
             <footer>
@@ -71,6 +151,7 @@
             </footer>
 
             <script src="scripts/scoots.js"></script>
+            <script src="scripts/hidden.js"></script>
 </body>
 
 </html>
