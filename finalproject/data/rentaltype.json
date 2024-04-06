@@ -7,28 +7,28 @@
                     "brand": "Honda Metropolitan Scooter",
                     "image": "https://gianvin.github.io/wdd230/finalproject/images/honda-metropolitan.jpg",
                     "capacity": "1 person",
-                    "hd reservation": "$20",
-                    "fd reservation": "$30",
-                    "hd walk-in": "$25",
-                    "fd walk-in": "$35"
+                    "hdreservation": "$20",
+                    "fdreservation": "$30",
+                    "hdwalkin": "$25",
+                    "fdwalkin": "$35"
                 },
                 {
                     "brand": "Honda Dio Scooter",
                     "image": "https://gianvin.github.io/wdd230/finalproject/images/honda-dio.jpg",
                     "capacity": "2 person",
-                    "hd reservation": "$30",
-                    "fd reservation": "$40",
-                    "hd walk-in": "$35",
-                    "fd walk-in": "$45"
+                    "hdreservation": "$30",
+                    "fdreservation": "$40",
+                    "hdwalkin": "$35",
+                    "fdwalkin": "$45"
                 },
                 {
                     "brand": "Honda PCX150 Scooter",
                     "image": "https://gianvin.github.io/wdd230/finalproject/images/honda-pcx.webp",
                     "capacity": "2 person",
-                    "hd reservation": "$40",
-                    "fd reservation": "$50",
-                    "hd walk-in": "$45",
-                    "fd walk-in": "$55"
+                    "hdreservation": "$40",
+                    "fdreservation": "$50",
+                    "hdwalkin": "$45",
+                    "fdwalkin": "$55"
                 }
             ]
         },
@@ -39,10 +39,10 @@
                     "brand": "Honda Pioneer ATV",
                     "image": "https://gianvin.github.io/wdd230/finalproject/images/honda-atv.jpg",
                     "capacity": "4 person",
-                    "hd reservation": "$50",
-                    "fd reservation": "$70",
-                    "hd walk-in": "$60",
-                    "fd walk-in": "$80"
+                    "hdreservation": "$50",
+                    "fdreservation": "$70",
+                    "hdwalkin": "$60",
+                    "fdwalkin": "$80"
                 }
             ]
         },
@@ -53,19 +53,19 @@
                     "brand": "Jeep Wrangler 4 door with A/C",
                     "image": "https://gianvin.github.io/wdd230/finalproject/images/wrangler-ac.jpg",
                     "capacity": "5 person",
-                    "hd reservation": "$70",
-                    "fd reservation": "$100",
-                    "hd walk-in": "$85",
-                    "fd walk-in": "$125"
+                    "hdreservation": "$70",
+                    "fdreservation": "$100",
+                    "hdwalkin": "$85",
+                    "fdwalkin": "$125"
                 },
                 {
                     "brand": "Jeep Wrangler 2 door",
                     "image": "https://gianvin.github.io/wdd230/finalproject/images/wrangler-oa.jpg",
                     "capacity": "5 person",
-                    "hd reservation": "$60",
-                    "fd reservation": "$85",
-                    "hd walk-in": "$70",
-                    "fd walk-in": "$90"
+                    "hdreservation": "$60",
+                    "fdreservation": "$85",
+                    "hdwalk-in": "$70",
+                    "fdwalk-in": "$90"
                 }
             ]
         }
