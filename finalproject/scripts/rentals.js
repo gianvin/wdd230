@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     const baseURL = "https://gianvin.github.io/wdd230";
-    const linksURL = "https://gianvin.github.io/wdd230/finalproject/data/rentaltype.json";
+    const linksURL = "https://gianvin.github.io/wdd230/finalproject/data/rentals.json";
 
     let rentals = [];
 
