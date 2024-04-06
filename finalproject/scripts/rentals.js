@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     const baseURL = "https://gianvin.github.io/wdd230";
-
     const linksURL = "https://gianvin.github.io/wdd230/finalproject/data/rentaltype.json";
 
-    let rental = [];
+    let rentals = [];
 
     const cards = document.getElementById("cards");
     const rentalList = document.getElementById("rentalList");
@@ -24,27 +23,28 @@ document.addEventListener("DOMContentLoaded", function () {
     function createCard(rental) {
         const card = document.createElement("div");
         card.classList.add("card");
-        card.innerHTML = `<img src="${rental.image}" alt="${rental.name}" />
-        <h3>${rental.name}</h3>
+        card.innerHTML = `<img src="${rental.image}" alt="${rental.brand}" />
+        <h3>${rental.brand}</h3>
         <P>Max Persons: ${rental.capacity}</p>`;
         return card;
     }
     function displayGrid() {
         cards.innerHTML = "";
-        rental.forEach(_rental => {
-            cards.appendChild(createCard(_rental));
+        rentals.forEach(rental => {
+            cards.appendChild(createCard(rental));
         });
     }
     function displayList() {
         rentalList.innerHTML = "";
-        rental.forEach(_rental => {
-            rentalList.appendChild(createListItem(_rental));
+        rentals.forEach(rental => {
+            rentalList.appendChild(createListItem(rental));
         });
     }
+
     fetch(linksURL)
         .then(response => response.json())
         .then(data => {
-            rental = data.rental;
+            rentals = data.rentals;
 
             displayGrid();
         })
@@ -61,3 +61,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+

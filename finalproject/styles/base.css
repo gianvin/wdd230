@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=RocknRoll+One&display=swap');
 
-
+/*General Styles */
 * {
     box-sizing: border-box;
 }
@@ -31,6 +31,8 @@ main {
     grid-gap: 20px;
 }
 
+/* logo styles */
+
 .logo {
     width: 100px;
     height: 100px;
@@ -40,6 +42,8 @@ main {
     border: 5px solid black;
 }
 
+/* heading styles */
+
 h1 {
     color: yellow;
     margin: 0;
@@ -48,6 +52,7 @@ h1 {
     text-align: left;
 }
 
+/* sub-heading styles */
 h2 {
     position: absolute;
     top: 5%;
@@ -59,6 +64,8 @@ h2 {
     font-size: xx-large;
     transform: translateX(-50%);
 }
+
+/* section geading */
 
 h3 {
     text-align: left;
@@ -77,11 +84,18 @@ h5 {
     text-decoration: underline;
 }
 
+/* card and List container styles */
+.rental-info,
+#cards,
+#rentalList {
+    display: grid;
+    grid-gap: 20px;
+
+}
+
 .rental-info {
     grid-column: span 2;
-    display: grid;
     grid-template-columns: 1 fr;
-    grid-gap: 20px;
 }
 
 .rental-info picture {
@@ -135,6 +149,7 @@ h5 {
     font-size: 16px;
 }
 
+/* navigation styles */
 nav {
     text-align: right;
     display: flex;
@@ -181,7 +196,7 @@ nav a.active {
 }
 
 
-
+/* footer styles */
 footer {
     display: grid;
     padding: 1.2em;
@@ -193,7 +208,7 @@ footer {
     font-size: xx-large;
 }
 
-
+/* social icons styles */
 .social-icons {
     display: flex;
     justify-content: flex-end;
@@ -207,6 +222,7 @@ footer {
     text-decoration: none;
 }
 
+/*switch styles */
 .switch {
     position: relative;
     display: inline-block;
@@ -221,6 +237,7 @@ footer {
     height: 0;
 }
 
+/* Mode text styles */
 .mode-text {
     position: absolute;
     top: 50%;
@@ -239,6 +256,7 @@ input:checked+.slider+.mode-text {
     right: calc(100% +10px);
 }
 
+/* slider styles */
 .slider {
     position: absolute;
     cursor: pointer;
@@ -288,7 +306,7 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
-/* styles for rentals html */
+/* Card styles */
 
 #cards {
     display: grid;
@@ -326,11 +344,10 @@ input:checked+.slider:before {
     font-size: 14px;
 }
 
+/* list items styles */
 #rentalList {
     padding: 20px;
-    display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    grid-gap: 20px;
 }
 
 #rentalList li {
