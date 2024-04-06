@@ -45,7 +45,8 @@ main {
 /* heading styles */
 
 h1 {
-    color: yellow;
+    color: rgb(255, 255, 0);
+    ;
     margin: 0;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -159,7 +160,7 @@ nav a:hover {
 
 nav a {
     text-decoration: none;
-    color: yellow;
+    color: rgb(255, 255, 0);
     font-size: 30px;
     transition: border-color 0.3s ease;
     display: flex;
@@ -388,6 +389,7 @@ input:checked+.slider:before {
 
 .wf1 {
     grid-column: 1/2;
+    width: 100%;
 }
 
 .wf1 h1 {
@@ -405,14 +407,14 @@ input:checked+.slider:before {
     border: 1px solid var(--border);
     border-radius: 6px;
     padding: .5rem 2%;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .wf1 legend {
     color: var(--foredark);
     padding: 0 .5rem;
     text-align: left;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .wf1 label {
@@ -425,7 +427,7 @@ input:checked+.slider:before {
 
 .wf1 div {
     color: var(--foredark);
-    font-size: 30px;
+    font-size: 24px;
 }
 
 wf1 input[type="text"],
@@ -440,7 +442,7 @@ wf1 input[type="text"],
     width: 100%;
     max-width: 400px;
     appearance: none;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .wf1 input[type="radio"] {
@@ -469,4 +471,68 @@ wf1 input[type="text"],
 
 input[type="submit"]:hover {
     background-color: var(--foredark);
+}
+
+/* styles for table agreement information */
+table {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    height: 70%;
+    width: 100%;
+    max-width: calc(100% - 40px);
+    border: thin solid var(--back2);
+    box-shadow: 0 0 10px var(--shadow);
+    border-collapse: collapse;
+
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--foredark);
+    font-size: .85rem;
+}
+
+tbody {
+    background-color: antiquewhite;
+    color: var(--border);
+    max-width: 50%;
+
+}
+
+tbody tr {
+    color: var(--foredark);
+
+}
+
+tbody tr ul li {
+    margin-top: 5px;
+    text-align: left;
+    color: var(--foredark);
+    font-size: 50px;
+
+}
+
+
+th,
+td {
+    padding: 4px 10px;
+    border: 1px solid var(--borderlight);
+}
+
+th {
+    background-color: var(--foredark);
+    font-size: 50px;
+    color: var(--forelight);
+}
+
+/* style for thank you */
+
+p {
+    font-size: xx-large;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
