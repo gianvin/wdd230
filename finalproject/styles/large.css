@@ -1,4 +1,21 @@
 @media screen and (min-width: 768px) {
+    nav {
+        display: flex;
+        padding: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        flex: 1 1 100%;
+        margin-right: 10px;
+    }
+
+    #menu,
+    #closeButton {
+        display: none;
+    }
+
+
     main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -14,5 +31,29 @@
 
     .card-weather {
         grid-column: span 1;
+    }
+
+    #rentalList {
+        padding: 20px;
+        display: table;
+        width: 100%;
+    }
+
+    #rentalList li {
+        display: table-row;
+    }
+
+    #rentalList li>* {
+        display: table-cell;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+
+    #rentalList h3,
+    #rentalList p {
+        margin: 0;
+        font-size: 16px;
     }
 }

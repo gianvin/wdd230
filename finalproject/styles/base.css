@@ -85,15 +85,9 @@ h5 {
 }
 
 /* card and List container styles */
-.rental-info,
-#cards,
-#rentalList {
+.rental-info {
     display: grid;
     grid-gap: 20px;
-
-}
-
-.rental-info {
     grid-column: span 2;
     grid-template-columns: 1 fr;
 }
@@ -150,6 +144,7 @@ h5 {
 }
 
 /* navigation styles */
+
 nav {
     text-align: right;
     display: flex;
@@ -176,6 +171,7 @@ nav a.active {
     color: white;
     border-radius: 5px;
 }
+
 
 #hero {
     position: relative;
@@ -346,6 +342,8 @@ input:checked+.slider:before {
 
 /* list items styles */
 #rentalList {
+    display: grid;
+    grid-gap: 20px;
     padding: 20px;
     grid-template-columns: auto auto auto auto auto auto;
 }
