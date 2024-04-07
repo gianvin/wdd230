@@ -536,3 +536,78 @@ p {
     margin-top: 0%;
     margin-bottom: 0%;
 }
+
+/* styles for the contact HTML Contact Information */
+
+.contact-info {
+    background-image: #f9f9f9;
+    padding: 20x;
+    margin-bottom: 20px;
+}
+
+.contact-info h6 {
+    color: #333;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Styles for Contact Form */
+
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-form h6 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-size: 18px;
+    color: #666;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: ipx solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* styles for embedded map iframe */
+
+.location {
+    margin-bottom: 20px;
+}
