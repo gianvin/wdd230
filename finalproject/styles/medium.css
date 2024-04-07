@@ -13,4 +13,62 @@
         width: 80%;
         left: 10%;
     }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    .switch {
+        margin-left: 0;
+    }
+
+    .switch,
+    .mode-text {
+        margin-left: 0;
+    }
+
+    .mode-text {
+        position: relative;
+        left: auto;
+        transform: none;
+        margin-left: 10px;
+    }
+
+    .social-icons {
+        display: block;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .social-icons a {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #closebutton {
+        display: none;
+    }
 }
