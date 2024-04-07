@@ -90,7 +90,7 @@ h5 {
     display: grid;
     grid-gap: 20px;
     grid-column: span 2;
-    grid-template-columns: 1 fr;
+    grid-template-columns: 1fr;
 }
 
 .rental-info picture {
@@ -249,8 +249,8 @@ footer {
 }
 
 input:checked+.slider+.mode-text {
-    content: #333;
-    right: calc(100% +10px);
+    color: #333;
+    right: calc(100% + 10px);
 }
 
 /* slider styles */
@@ -382,7 +382,7 @@ input:checked+.slider:before {
 .reservation-page {
     background-color: var(--forelight);
     display: grid;
-    grid-template-columns: 1 fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-bottom: 35px;
 }
@@ -540,8 +540,8 @@ p {
 /* styles for the contact HTML Contact Information */
 
 .contact-info {
-    background-image: #f9f9f9;
-    padding: 20x;
+    background-color: #f9f9f9;
+    padding: 20px;
     margin-bottom: 20px;
 }
 
@@ -588,7 +588,7 @@ p {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: ipx solid #ccc;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
